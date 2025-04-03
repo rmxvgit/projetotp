@@ -26,7 +26,7 @@ class UsrCode {
         string getStr();
         uint32_t getNum();
         void set(const string& num_str);
-        void set(const u_int32_t user_code);
+        void set(const u_int32_t code_num);
 
         // comparing
         bool operator==(const UsrCode& other);

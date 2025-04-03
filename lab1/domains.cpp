@@ -8,8 +8,8 @@ using namespace std;
 
 
 // validação do formato do código
-bool UsrCode::validateCodeStr(const string& num_str) {
-    string num_str_formated = addPaddingToCodeStr(num_str);
+bool UsrCode::validateCodeStr(const string& code_str) {
+    string num_str_formated = addPaddingToCodeStr(code_str);
     for (const char& ch : num_str_formated) {
         if (ch < '0' || '9' < ch) return false;
     }
@@ -59,7 +59,7 @@ string UsrCode::getStr() {
 }
 
 
-uint32_t UsrCode::getNum() {
+inline uint32_t UsrCode::getNum() {
     return code_number;
 }
 
@@ -77,7 +77,7 @@ void UsrCode::set(const u_int32_t user_code) {
 }
 
 
-bool UsrCode::operator==(const UsrCode& other) {
+inline bool UsrCode::operator==(const UsrCode& other) {
     return other.code_number == code_number;
 }
 
@@ -91,6 +91,6 @@ bool UsrCode::operator==(const string& other) {
 }
 
 
-bool UsrCode::operator==(const int32_t other) {
+inline bool UsrCode::operator==(const int32_t other) {
     return other == code_number;
 }
