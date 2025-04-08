@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1744122295 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/main.cpp
+	<iostream>
+	<ostream>
+	"cpf.hpp"
+
+1744122525 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/cpf.hpp
+	<cstdint>
+	<string>
+
+1744122574 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/cpf.cpp
+	"cpf.hpp"
+	<cstdint>
+	<sstream>
+	<string>
+
