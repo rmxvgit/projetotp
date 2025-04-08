@@ -4,13 +4,15 @@
 	<ostream>
 	"cpf.hpp"
 
-1744122525 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/cpf.hpp
+1744126879 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/cpf.hpp
 	<cstdint>
 	<string>
 
-1744122574 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/cpf.cpp
+1744127000 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/cpf.cpp
 	"cpf.hpp"
 	<cstdint>
+	<cstdio>
+	<iostream>
 	<sstream>
 	<string>
 
