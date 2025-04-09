@@ -28,12 +28,12 @@
 	<cstdint>
 	<string>
 
-1744224778 source:c:\users\rodri\onedrive\desktop\estudos\programação\c++\tp\projetotp\dominios\main.cpp
+1744232395 source:c:\users\rodri\onedrive\desktop\estudos\programação\c++\tp\projetotp\dominios\main.cpp
 	<iostream>
-	"senha.h"
+	"quantidade.hpp"
 
-1744224536 source:c:\users\rodri\onedrive\desktop\estudos\programação\c++\tp\projetotp\dominios\senha.cpp
-	"senha.h"
+1744232125 source:c:\users\rodri\onedrive\desktop\estudos\programação\c++\tp\projetotp\dominios\senha.cpp
+	"senha.hpp"
 	<string>
 	<regex>
 	<set>
@@ -44,5 +44,14 @@
 
 1744221132 c:\users\rodri\onedrive\desktop\estudos\programação\c++\tp\projetotp\dominios\senha.cpp
 	"senha.h"
+	<string>
+
+1744225753 c:\users\rodri\onedrive\desktop\estudos\programação\c++\tp\projetotp\dominios\senha.hpp
+	<string>
+
+1744232459 source:c:\users\rodri\onedrive\desktop\estudos\programação\c++\tp\projetotp\dominios\quantidade.cpp
+	"quantidade.hpp"
+
+1744232359 c:\users\rodri\onedrive\desktop\estudos\programação\c++\tp\projetotp\dominios\quantidade.hpp
 	<string>
 

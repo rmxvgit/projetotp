@@ -36,6 +36,8 @@ bool Senha::validate(string password){
 
 bool Senha::setSenha(string password){
     bool isValid = validate(password);
-
+    if (isValid){
+        this->password = password;
+    }
     return isValid;
 }
