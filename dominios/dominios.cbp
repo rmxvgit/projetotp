@@ -39,6 +39,10 @@
 			<Option target="Debug" />
 		</Unit>
 		<Unit filename="main.cpp" />
+		<Unit filename="quantidade.cpp" />
+		<Unit filename="quantidade.hpp" />
+		<Unit filename="senha.cpp" />
+		<Unit filename="senha.hpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
