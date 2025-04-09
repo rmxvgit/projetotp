@@ -16,3 +16,33 @@
 	<sstream>
 	<string>
 
+1744220032 source:c:\users\rodri\onedrive\desktop\estudos\programação\c++\tp\projetotp\dominios\cpf.cpp
+	"cpf.hpp"
+	<cstdint>
+	<cstdio>
+	<iostream>
+	<sstream>
+	<string>
+
+1744220032 c:\users\rodri\onedrive\desktop\estudos\programação\c++\tp\projetotp\dominios\cpf.hpp
+	<cstdint>
+	<string>
+
+1744224778 source:c:\users\rodri\onedrive\desktop\estudos\programação\c++\tp\projetotp\dominios\main.cpp
+	<iostream>
+	"senha.h"
+
+1744224536 source:c:\users\rodri\onedrive\desktop\estudos\programação\c++\tp\projetotp\dominios\senha.cpp
+	"senha.h"
+	<string>
+	<regex>
+	<set>
+	<cctype>
+
+1744224742 c:\users\rodri\onedrive\desktop\estudos\programação\c++\tp\projetotp\dominios\senha.h
+	<string>
+
+1744221132 c:\users\rodri\onedrive\desktop\estudos\programação\c++\tp\projetotp\dominios\senha.cpp
+	"senha.h"
+	<string>
+
