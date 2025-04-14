@@ -1,6 +1,6 @@
 #include <iostream>
 #include "name.hpp"
-#include <string>
+
 
 using namespace std;
 
@@ -11,7 +11,7 @@ int main(){
     string inputName;
     getline(cin,inputName);
 
-    cout << userName.setValue(inputName) << endl;
+    userName.setValue(inputName);
     cout << userName.getValue() << endl;
     return 0;
 }
