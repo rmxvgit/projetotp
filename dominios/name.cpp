@@ -8,20 +8,24 @@ bool Name::validator_01 (const string &token){
     if(size > LIMITE) return false;
     
     /*Verificando se os caracteres contidos no vetor são permitidos pela definição*/
+    int QuantidadeDeEspacoEmBranco = 0;
     for(const char& ch: token){
 
-        int QuantidadeDeEspacoEmBranco = 0;
-        if(33 >= ch <= 47 ||  91  >= ch <= 96 || 123 >= ch <= 127 ) return false;
+        
+        int convertendoDeStringParaInteiro = int(ch);
+        if((convertendoDeStringParaInteiro < 32) ||
+        ((convertendoDeStringParaInteiro >= 33) && (convertendoDeStringParaInteiro <= 47)) ||  
+        ((convertendoDeStringParaInteiro >= 91) && (convertendoDeStringParaInteiro <= 96)) || 
+        ((convertendoDeStringParaInteiro >= 123) && (convertendoDeStringParaInteiro <= 127))) return false;
 
-        if(ch == 32){
+        if(convertendoDeStringParaInteiro == 32){
 
             QuantidadeDeEspacoEmBranco += 1 ;
+            if(QuantidadeDeEspacoEmBranco == 2) return false;
 
         }else{
             QuantidadeDeEspacoEmBranco = 0;
         }
-        
-        if(QuantidadeDeEspacoEmBranco = 2) return false;
 
     }
     return true;
