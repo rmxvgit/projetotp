@@ -8,11 +8,11 @@
 using namespace std;
 
 
-string Senha::getSenha(){
+string Senha::Get(){
     return this->password;
 }
 
-bool Senha::validate(string password){
+bool Senha::validate(const string& password){
     if (password.length() != 6 ) return false;
 
     regex pattern("^[A-Za-z0-9#\\$%&]{6}$");
@@ -34,10 +34,17 @@ bool Senha::validate(string password){
 
 }
 
-bool Senha::setSenha(string password){
-    bool isValid = validate(password);
-    if (isValid){
-        this->password = password;
-    }
-    return isValid;
+bool Senha::Set(const string& password){
+    if (!validate(password)) return false;
+    this->password = password;
+    return true;
+}
+
+Senha::Senha() {
+    this->password = "";
+}
+
+Senha::Senha(const string&  password) {
+    if (!validate(password)) {/* erro */};
+    this->password = password;
 }

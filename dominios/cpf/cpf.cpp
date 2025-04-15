@@ -41,6 +41,11 @@ string Cpf::addPadding(const string& cpf_str) {
 }
 
 // Inicializadores:
+
+Cpf::Cpf() {
+    this->cpf = "000.000.000-0";
+}
+
 // WARNING: tem efeito colateral
 Cpf::Cpf(const string& cpf_str) {
     string clean_cpf = addPadding(cleanCPF(cpf_str));
@@ -60,7 +65,7 @@ Cpf::Cpf(const uint64_t cpf_num) {
 }
 
 // Equivalente a um get
-string Cpf::GetStr() {
+string Cpf::Get() {
     string show_cpf = this->cpf;
     string::iterator begining = show_cpf.begin();
     show_cpf.insert(begining + 9, '-');
@@ -82,6 +87,14 @@ void Cpf::Set(const string& cpf_str) {
     if (cpf_str.length() != CPF_NUM_DIGITS) {/* erro */}
 
     this->cpf = clean_cpf;
+}
+
+void Cpf::Set(const uint64_t cpf_num) {
+    string cpf_str = "";
+    stringstream cpf_stream = stringstream();
+    cpf_stream << cpf_num;
+    cpf_stream >> cpf_str;
+    this->cpf = addPadding(cpf_str);
 }
 
 bool Cpf::operator==(const Cpf& other) {

@@ -8,8 +8,13 @@ using namespace std;
 class Senha{
     private:
         string password;
-        bool validate(string);
+
+        bool validate(const string&);
+
     public:
-        string getSenha();
-        bool setSenha(string);
+        Senha();
+        Senha(const string&);
+
+        string Get();
+        bool Set(const string&);
 };

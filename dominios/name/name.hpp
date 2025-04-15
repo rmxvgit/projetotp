@@ -5,39 +5,35 @@
 -->Não podem existir espaços em branco em sequência.
 ----------------------------------------------------------------------------------------*/
 
-
-
-#include <iostream>
-
+#include <string>
 
 using namespace std;
 
 class Name{
     private :
+        // constants: ---------------------------------
+        static const int MAXIMUM_LENGTH = 20;
 
-    // constants: ---------------------------------
-    static const int maximumLength = 20;
+        // atributes: ---------------------------------
+        string name;
 
-    // atributes: ---------------------------------
-    string name;
 
-    // private methods: ---------------------------
-    bool amountOfWhitespace(const string &);
-    bool defaultOfTheCharecter(const string &);
-    
+        // private methods: ---------------------------
+        bool amountOfWhitespace(const string &);
+        bool defaultOfTheCharecter(const string &);
+        bool validator(const string &);
+
     public:
-    // analyzing parameters
-    bool validator(const string &);
 
-    // gets and sets
-    string getValue();
-    bool setValue(const string &);
+        // constructors --------------------------------
+        Name();
+        Name(const string &);
 
+        // gets and sets -------------------------------
+        string Get();
+        bool Set(const string &);
 };
 
-inline string Name :: getValue(){
-
+inline string Name::Get(){
     return name;
 }
-
-
