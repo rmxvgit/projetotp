@@ -13,7 +13,7 @@ class Cpf {
         string cpf; // cpf (somente dígitos)
 
         bool validateCPF(const string& cpf_str);
-        string cleanCPF(const string& cpf_str);
+        string cleanCPF(const string& cpf_sr);
         string addPadding(const string& cpf_str);
     public:
         const int CPF_NUM_DIGITS = 11;

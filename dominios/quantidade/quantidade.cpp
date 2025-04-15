@@ -1,7 +1,5 @@
 #include "quantidade.hpp"
 
-using namespace std;
-
 int Quantidade::getQuantidade(){
     return this->quantidade;
 }
