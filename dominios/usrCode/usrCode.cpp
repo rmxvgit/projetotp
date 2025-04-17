@@ -42,7 +42,7 @@ UsrCode::UsrCode(const string& usr_code_str) {
 }
 
 
-UsrCode::UsrCode(u_int32_t user_code) {
+UsrCode::UsrCode(uint32_t user_code) {
     if (user_code > LARGEST_NUM_REPRESENTABLE){/* erro */}
     code_number = user_code;
 };
@@ -71,7 +71,7 @@ void UsrCode::set(const string& num_str) {
 }
 
 
-void UsrCode::set(const u_int32_t user_code) {
+void UsrCode::set(const uint32_t user_code) {
     if (user_code > LARGEST_NUM_REPRESENTABLE){/* erro */}
     code_number = user_code;
 }

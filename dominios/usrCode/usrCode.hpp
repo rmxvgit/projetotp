@@ -20,13 +20,13 @@ class UsrCode {
     public:
         // init methods
         UsrCode(const string& usr_code_str);
-        UsrCode(u_int32_t user_code);
+        UsrCode(uint32_t user_code);
 
         // gets and sets
         string getStr();
         uint32_t getNum();
         void set(const string& num_str);
-        void set(const u_int32_t code_num);
+        void set(const uint32_t code_num);
 
         // comparing
         bool operator==(const UsrCode& other);
