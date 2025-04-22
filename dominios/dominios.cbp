@@ -32,17 +32,30 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="cpf.cpp">
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="cpf.hpp">
-			<Option target="Debug" />
-		</Unit>
+		<Unit filename="Entidades/carteira.hpp" />
+		<Unit filename="Entidades/conta.cpp" />
+		<Unit filename="Entidades/conta.hpp" />
+		<Unit filename="codigo/codigo.cpp" />
+		<Unit filename="codigo/codigo.hpp" />
+		<Unit filename="cpf/cpf.cpp" />
+		<Unit filename="cpf/cpf.hpp" />
+		<Unit filename="dinheiro/dinheiro.cpp" />
+		<Unit filename="dinheiro/dinheiro.hpp" />
 		<Unit filename="main.cpp" />
-		<Unit filename="quantidade.cpp" />
-		<Unit filename="quantidade.hpp" />
-		<Unit filename="senha.cpp" />
-		<Unit filename="senha.hpp" />
+		<Unit filename="name/name.cpp" />
+		<Unit filename="name/name.hpp" />
+		<Unit filename="negociarCode/negociarCode.cpp" />
+		<Unit filename="negociarCode/negociarCode.hpp" />
+		<Unit filename="perfil/perfil.cpp" />
+		<Unit filename="perfil/perfil.hpp" />
+		<Unit filename="prioridade/prioridade.cpp" />
+		<Unit filename="prioridade/prioridade.hpp" />
+		<Unit filename="quantidade/quantidade.cpp" />
+		<Unit filename="quantidade/quantidade.hpp" />
+		<Unit filename="senha/senha.cpp" />
+		<Unit filename="senha/senha.hpp" />
+		<Unit filename="usrCode/usrCode.cpp" />
+		<Unit filename="usrCode/usrCode.hpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
