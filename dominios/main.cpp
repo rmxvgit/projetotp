@@ -9,7 +9,7 @@
 int main(){
     cout << "CONTA COM INICIALIZAÇÃO PRÉVIA:" << endl;
 
-    Conta conta("batata d", "5", "Aa#123");
+    Conta conta("batata d", "031.915.716-47", "Aa#123");
 
     cout << conta.getCpf().Get() << endl;
     cout << conta.getName().Get() << endl;
