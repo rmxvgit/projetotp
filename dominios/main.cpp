@@ -1,6 +1,7 @@
 #include <iostream>
+#include "Entidades/conta.hpp"
 
-int main() {
+using namespace std;
 
 int main(){
     cout << "CONTA COM INICIALIZAÇÃO PRÉVIA:" << endl;
