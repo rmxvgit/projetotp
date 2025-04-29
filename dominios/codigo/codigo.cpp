@@ -1,7 +1,5 @@
-
 #include <stdexcept>
 #include "codigo.hpp"
-#pragma once
 
 
 void Codigo::validar(const string& codigo) {

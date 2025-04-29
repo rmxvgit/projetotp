@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Entidades/conta.hpp"
+#include "Entidades/ordem.hpp"
 
 using namespace std;
 
@@ -41,6 +42,16 @@ int main(){
     cout << contaDiferente.getCpf().Get() << endl;
     cout << contaDiferente.getName().Get() << endl;
     cout << contaDiferente.getSenha().Get() << endl;
+
+
+    // #######################################################
+    cout  << endl << "Teste da classe ordem" << endl;
+
+    Ordem ordem("111111111", 3, "111111111111", 10.5);
+    cout << ordem.getCodigo().Get() << endl;
+    cout << ordem.getQuantidade().getQuantidade() << endl;
+    cout << ordem.getNegociacao().getCod() << endl;
+    cout << ordem.getPreco().getDinheiro() << endl;
 
     return 0;
 }
