@@ -3,9 +3,12 @@
 
 
 void Codigo::validar(const string& codigo) {
+    if (codigo.length() !=  LIMITE){
+        throw invalid_argument("codigo inválido: tamanho incorreto");
+    }
     for (const char& i : codigo) {
         if (i < '0' || i > '9') {
-            throw invalid_argument("codigo inválido caracter não numérico");
+            throw invalid_argument("codigo inválido: caracter não numérico.");
         }
     }
 }
