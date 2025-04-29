@@ -1,7 +1,7 @@
 #include "ordem.hpp"
 
-Ordem::Ordem(int codigo, int quantidade, const string& codNegociacao, float preco){
-    this->codigo.setValor(codigo);
+Ordem::Ordem(const string& codigo, int quantidade, const string& codNegociacao, float preco){
+    this->codigo.Set(codigo);
     this->quantidade.setQuantidade(quantidade);
     this->negociacao.setCod(codNegociacao);
     this->preco.setDinheiro(preco);
@@ -11,8 +11,8 @@ void Ordem::setCodigo(const Codigo& codigo) {
     this->codigo = codigo;
 }
 
-void Ordem::setCodigo(int codigo) {
-    this->codigo.setValor(codigo);
+void Ordem::setCodigo(const string& codigo) {
+    this->codigo.Set(codigo);
 }
 
 void Ordem::setQuantidade(const Quantidade& quantidade){

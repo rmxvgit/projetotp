@@ -13,9 +13,9 @@ class Ordem {
         Dinheiro      preco;
 
     public:
-        Ordem(int codigo, int quantidade, const string& codNegociacao, float preco);
+        Ordem(const string& codigo, int quantidade, const string& codNegociacao, float preco);
         void setCodigo(const Codigo&);
-        void setCodigo(int);
+        void setCodigo(const string&);
 
         void setQuantidade(const Quantidade&);
         void setQuantidade(int);
