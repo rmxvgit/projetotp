@@ -1,6 +1,6 @@
 #ifndef DINHEIRO_HPP_INCLUDED
 #define DINHEIRO_HPP_INCLUDED
-
+#include <stdexcept>
 using namespace std;
 
 class Dinheiro{
@@ -9,8 +9,8 @@ private:
     bool valido;
 public:
     float getDinheiro();
-    bool setDinheiro(float);
-    bool validarDinheiro(float);
+    void setDinheiro(float);
+    void validarDinheiro(float);
 
 };
 

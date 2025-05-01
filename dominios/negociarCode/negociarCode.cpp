@@ -1,10 +1,8 @@
 #include <string>
 #include "negociarCode.hpp"
 
-bool codigoNegocio::testeValidez(const string& codN){
+void codigoNegocio::testeValidez(const string& codN){
     if(codN.size() > limite){
-        return false;
+        throw invalid_argument("codigo de negociacao invalido");
     }
-    return true;
-
 }

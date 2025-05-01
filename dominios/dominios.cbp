@@ -32,9 +32,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Entidades/carteira.cpp" />
 		<Unit filename="Entidades/carteira.hpp" />
 		<Unit filename="Entidades/conta.cpp" />
 		<Unit filename="Entidades/conta.hpp" />
+		<Unit filename="Entidades/ordem.cpp" />
+		<Unit filename="Entidades/ordem.hpp" />
 		<Unit filename="codigo/codigo.cpp" />
 		<Unit filename="codigo/codigo.hpp" />
 		<Unit filename="cpf/cpf.cpp" />

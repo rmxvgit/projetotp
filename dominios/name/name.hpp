@@ -5,6 +5,7 @@
 -->Não podem existir espaços em branco em sequência.
 ----------------------------------------------------------------------------------------*/
 
+#pragma once
 #include <string>
 
 using namespace std;

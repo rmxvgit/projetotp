@@ -2,6 +2,7 @@
 #define NEGOCIARCODE_HPP_INCLUDED
 
 #include <string>
+#include <stdexcept>
 
 using namespace std;
 
@@ -10,9 +11,9 @@ class codigoNegocio{
             static const int limite = 12;
             string codN;
     public:
-            bool testeValidez(const string&);
+            void testeValidez(const string&);
             string getCod();
-            bool setCod(const string&);
+            void setCod(const string&);
 
 };
 
@@ -21,14 +22,12 @@ inline string codigoNegocio::getCod(){
 
 }
 
-inline bool codigoNegocio::setCod(const string& codn){
-    if(testeValidez(codn)){
-        codN = codn;
-        return true;
-    }else{
-        return false;
-    }
-
+inline void codigoNegocio::setCod(const string& codn){
+    testeValidez(codn);
+    this->codN = codn;
 }
+        
+
+
 
 #endif // NEGOCIARCODE_HPP_INCLUDED

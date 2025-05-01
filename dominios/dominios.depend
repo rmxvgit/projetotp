@@ -134,3 +134,110 @@
 1744916140 c:\users\rodri\onedrive\desktop\estudos\programação\c++\tp\projetotp\dominios\perfil\perfil.hpp
 	<string>
 
+1746028473 source:c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\codigo\codigo.cpp
+	<stdexcept>
+	"codigo.hpp"
+
+1746028473 c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\codigo\codigo.hpp
+	<string>
+
+1746028473 source:c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\cpf\cpf.cpp
+	"cpf.hpp"
+	<cstdint>
+	<cstdio>
+	<iostream>
+	<sstream>
+	<string>
+
+1746028473 c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\cpf\cpf.hpp
+	<cstdint>
+	<string>
+
+1746030626 source:c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\dinheiro\dinheiro.cpp
+	"dinheiro.hpp"
+
+1746030627 c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\dinheiro\dinheiro.hpp
+	<stdexcept>
+
+1746029223 source:c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\entidades\carteira.cpp
+	"carteira.hpp"
+
+1746029180 c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\entidades\carteira.hpp
+	"../codigo/codigo.hpp"
+	"../name/name.hpp"
+	"../perfil/perfil.hpp"
+
+1746029407 c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\name\name.hpp
+	<string>
+
+1746028474 c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\perfil\perfil.hpp
+	<string>
+
+1746028472 source:c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\entidades\conta.cpp
+	"conta.hpp"
+
+1746028472 c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\entidades\conta.hpp
+	"../cpf/cpf.hpp"
+	"../name/name.hpp"
+	"../senha/senha.hpp"
+
+1746028474 c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\senha\senha.hpp
+	<string>
+
+1746028472 source:c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\entidades\ordem.cpp
+	"ordem.hpp"
+
+1746028472 c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\entidades\ordem.hpp
+	"../dinheiro/dinheiro.hpp"
+	"../quantidade/quantidade.hpp"
+	"../codigo/codigo.hpp"
+	"../negociarCode/negociarCode.hpp"
+
+1746028474 c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\quantidade\quantidade.hpp
+
+1746030617 c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\negociarcode\negociarcode.hpp
+	<string>
+	<stdexcept>
+
+1746030860 source:c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\main.cpp
+	<iostream>
+	"Entidades/conta.hpp"
+	"Entidades/ordem.hpp"
+	"Entidades/carteira.hpp"
+
+1746028473 source:c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\name\name.cpp
+	"name.hpp"
+
+1746030625 source:c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\negociarcode\negociarcode.cpp
+	<string>
+	"negociarCode.hpp"
+
+1746028474 source:c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\perfil\perfil.cpp
+	"Perfil.hpp"
+
+1746028474 source:c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\prioridade\prioridade.cpp
+	"prioridade.hpp"
+
+1746028474 c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\prioridade\prioridade.hpp
+
+1746028474 source:c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\quantidade\quantidade.cpp
+	"quantidade.hpp"
+
+1746028474 source:c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\senha\senha.cpp
+	"senha.hpp"
+	<string>
+	<regex>
+	<set>
+	<cctype>
+
+1746028474 source:c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\usrcode\usrcode.cpp
+	"usrCode.hpp"
+	<iostream>
+	<string>
+	<sstream>
+	<sys/types.h>
+
+1746028475 c:\users\cahro\documents\3 semestre\projeto tp v2\projetotp-main\dominios\usrcode\usrcode.hpp
+	<cstdint>
+	<string>
+

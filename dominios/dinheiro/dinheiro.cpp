@@ -4,23 +4,15 @@ float Dinheiro::getDinheiro(){
     return this->dinheiro;
 }
 
- bool Dinheiro::validarDinheiro(float dinheiro){
-     if(dinheiro > 0.01 && dinheiro < 1000000.00){
-        return true;
-     }else{
-        return false;
+ void Dinheiro::validarDinheiro(float dinheiro){
+     if(dinheiro < 0.01 || dinheiro > 1000000.00){
+        throw invalid_argument("valor do dinheiro invalido");
      }
 
  }
 
- bool Dinheiro::setDinheiro(float dinheiro){
-    bool valid = Dinheiro::validarDinheiro(dinheiro);
-
-    if(valid){
-        this->dinheiro = dinheiro;
-        return true;
-    }else{
-        return false;
-    }
+ void Dinheiro::setDinheiro(float dinheiro){
+    validarDinheiro(dinheiro);
+    this->dinheiro = dinheiro;
 
  }
