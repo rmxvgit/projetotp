@@ -1,5 +1,5 @@
 # projetotp
-projetos/laboratórios de técnicas de programação
+projetos/laboratórios de técnicas de programação.
 
 ## lab1 (implementação da classe UsrCode):
 A classe UsrCode armazena um código numérico de cinco dígitos (0-9).
