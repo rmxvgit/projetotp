@@ -32,7 +32,7 @@ class Name{
 
         // gets and sets -------------------------------
         string Get();
-        bool Set(const string &);
+        void Set(const string &);
 };
 
 inline string Name::Get(){

@@ -1,5 +1,6 @@
 #include "usrCode.hpp"
 #include <iostream>
+#include <stdexcept>
 #include <string>
 #include <sstream>
 #include <sys/types.h>
@@ -23,7 +24,9 @@ string UsrCode::addPaddingToCodeStr(const string& code_str) {
     string result_string = "";
     int paddingSize = NUMBER_OF_DIGITS - code_str.length();
 
-    if (paddingSize < 0) {/* erro */}
+    if (paddingSize < 0) {
+        throw invalid_argument("tamanho de string inválida");
+    }
 
     for (int i = 0; i <  paddingSize; i++) {
         result_string += "0";
@@ -36,7 +39,9 @@ string UsrCode::addPaddingToCodeStr(const string& code_str) {
 
 
 UsrCode::UsrCode(const string& usr_code_str) {
-    if (!validateCodeStr(usr_code_str)) {/* error */};
+    if (!validateCodeStr(usr_code_str)) {
+        throw invalid_argument("user code inválido");
+    }
     stringstream str_stream = stringstream(usr_code_str);
     str_stream >> code_number;
 }
@@ -65,14 +70,18 @@ inline uint32_t UsrCode::getNum() {
 
 
 void UsrCode::set(const string& num_str) {
-    if (!validateCodeStr(num_str)) {/* error */}
+    if (!validateCodeStr(num_str)) {
+        throw invalid_argument("user code inválido");
+    }
     stringstream str_stream = stringstream(num_str);
     str_stream >> code_number;
 }
 
 
 void UsrCode::set(const uint32_t user_code) {
-    if (user_code > LARGEST_NUM_REPRESENTABLE){/* erro */}
+    if (user_code > LARGEST_NUM_REPRESENTABLE){
+        throw invalid_argument("código de usuário grande demais");
+    }
     code_number = user_code;
 }
 
@@ -83,7 +92,9 @@ inline bool UsrCode::operator==(const UsrCode& other) {
 
 
 bool UsrCode::operator==(const string& other) {
-    if (!validateCodeStr(other)) {/* error */}
+    if (!validateCodeStr(other)) {
+        throw invalid_argument("user code inválido");
+    }
     uint32_t other_number;
     stringstream str_stream = stringstream(other);
     str_stream >> other_number;

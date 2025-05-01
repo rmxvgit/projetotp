@@ -1,4 +1,5 @@
 #include "name.hpp"
+#include <stdexcept>
 
 Name::Name() {
     this->name = "";
@@ -54,9 +55,10 @@ bool Name :: amountOfWhitespace(const string &userName){
     return true;
 }
 
-bool Name::Set(const string &userName){
-    if(!validator(userName)) return false;
+void Name::Set(const string &userName){
+    if(!validator(userName)) {
+        throw invalid_argument("nome de usuário inválido");
+    };
 
     this->name = userName;
-    return true;
 }

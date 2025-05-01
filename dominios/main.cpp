@@ -53,7 +53,7 @@ int main(){
     Ordem ordem("111111111", 3, "111111111111", 10.5);
     cout << ordem.getCodigo().Get() << endl;
     cout << ordem.getQuantidade().getQuantidade() << endl;
-    cout << ordem.getNegociacao().getCod() << endl;
+    cout << ordem.getNegociacao().Get() << endl;
     cout << ordem.getPreco().getDinheiro() << endl;
 
     // #######################################################
@@ -65,7 +65,7 @@ int main(){
 
     Perfil::Tipo tipo = Perfil::Tipo::AGRESSIVO;
 
-    perfil.setTipo(tipo);
+    perfil.Set(tipo);
     carteira.setPerfil(perfil);
 
     codigo.Set("123456789");

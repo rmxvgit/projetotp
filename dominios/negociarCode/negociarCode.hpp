@@ -2,7 +2,6 @@
 #define NEGOCIARCODE_HPP_INCLUDED
 
 #include <string>
-#include <stdexcept>
 
 using namespace std;
 
@@ -12,21 +11,21 @@ class codigoNegocio{
             string codN;
     public:
             void testeValidez(const string&);
-            string getCod();
-            void setCod(const string&);
+            string Get();
+            void Set(const string&);
 
 };
 
-inline string codigoNegocio::getCod(){
+inline string codigoNegocio::Get(){
     return codN;
 
 }
 
-inline void codigoNegocio::setCod(const string& codn){
+inline void codigoNegocio::Set(const string& codn){
     testeValidez(codn);
     this->codN = codn;
 }
-        
+
 
 
 

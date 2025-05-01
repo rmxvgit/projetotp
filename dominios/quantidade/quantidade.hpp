@@ -6,5 +6,5 @@ class Quantidade{
         bool validate(int);
     public:
         int getQuantidade();
-        bool setQuantidade(int);
+        void setQuantidade(int);
 };

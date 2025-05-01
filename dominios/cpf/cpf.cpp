@@ -3,6 +3,7 @@
 #include <cstdio>
 #include <iostream>
 #include <sstream>
+#include <stdexcept>
 #include <string>
 
 using namespace std;
@@ -43,14 +44,16 @@ string Cpf::addPadding(const string& cpf_str) {
 // Inicializadores:
 
 Cpf::Cpf() {
-    this->cpf = "000.000.000-0";
+    this->cpf = "00000000000";
 }
 
 // WARNING: tem efeito colateral
 Cpf::Cpf(const string& cpf_str) {
-    string clean_cpf = addPadding(cleanCPF(cpf_str));
+    string clean_cpf = cleanCPF(cpf_str);
 
-    if (cpf_str.length() != CPF_NUM_DIGITS) {/* erro */}
+    if (!validateCPF(clean_cpf)) {
+        throw invalid_argument("cpf invalido");
+    }
 
     this->cpf = clean_cpf;
 }
@@ -84,7 +87,9 @@ uint64_t Cpf::GetNum() {
 void Cpf::Set(const string& cpf_str) {
     string clean_cpf = addPadding(cleanCPF(cpf_str));
 
-    if (cpf_str.length() != CPF_NUM_DIGITS) {/* erro */}
+    if (!validateCPF(clean_cpf)) {
+        throw invalid_argument("cpf invalido");
+    }
 
     this->cpf = clean_cpf;
 }
@@ -102,7 +107,7 @@ bool Cpf::operator==(const Cpf& other) {
 }
 
 bool Cpf::operator==(const string& other) {
-    string other_cpf_str = addPadding(cleanCPF(other));
+    string other_cpf_str = cleanCPF(other);
     return this->cpf == other_cpf_str;
 }
 

@@ -4,6 +4,6 @@ class Prioridade {
         int valor;
         bool validar(int);
     public:
-        bool setValor(int);
+        void setValor(int);
         int getValor();
 };

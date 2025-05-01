@@ -1,5 +1,6 @@
 #include "senha.hpp"
 
+#include <stdexcept>
 #include <string>
 #include <regex>
 #include <set>
@@ -34,10 +35,11 @@ bool Senha::validate(const string& password){
 
 }
 
-bool Senha::Set(const string& password){
-    if (!validate(password)) return false;
+void Senha::Set(const string& password){
+    if (!validate(password)) {
+        throw invalid_argument("senha inválida");
+    }
     this->password = password;
-    return true;
 }
 
 Senha::Senha() {

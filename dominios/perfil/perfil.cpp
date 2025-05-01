@@ -1,15 +1,15 @@
-#include "Perfil.hpp"
+#include "perfil.hpp"
 
 
 Perfil::Perfil() : tipo(Tipo::CONSERVADOR) {}
 
 Perfil::Perfil(Tipo tipo) : tipo(tipo) {}
 
-Perfil::Tipo Perfil::getTipo(){
+Perfil::Tipo Perfil::Get(){
     return tipo;
 }
 
-void Perfil::setTipo(Tipo tipo) {
+void Perfil::Set(Tipo tipo) {
     this->tipo = tipo;
 }
 

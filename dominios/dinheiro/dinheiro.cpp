@@ -1,5 +1,8 @@
 #include "dinheiro.hpp"
 
+#include <stdexcept>
+using namespace std;
+
 float Dinheiro::getDinheiro(){
     return this->dinheiro;
 }

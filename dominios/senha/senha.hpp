@@ -16,5 +16,5 @@ class Senha{
         Senha(const string&);
 
         string Get();
-        bool Set(const string&);
+        void Set(const string&);
 };

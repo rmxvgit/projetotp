@@ -1,4 +1,5 @@
 #include "quantidade.hpp"
+#include <stdexcept>
 
 int Quantidade::getQuantidade(){
     return this->quantidade;
@@ -9,10 +10,10 @@ bool Quantidade::validate(int quantidade){
     return false;
 }
 
-bool Quantidade::setQuantidade(int quantidade){
+void Quantidade::setQuantidade(int quantidade){
     bool isValid = Quantidade::validate(quantidade);
-    if (isValid){
-        this->quantidade = quantidade;
+    if (!isValid){
+        throw std::invalid_argument("quantidade inválida");
     }
-    return isValid;
+    this->quantidade = quantidade;
 }

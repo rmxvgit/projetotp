@@ -14,8 +14,8 @@ public:
     Perfil();
     Perfil(Tipo tipo);
 
-    Tipo getTipo();
-    void setTipo(Tipo tipo);
+    Tipo Get();
+    void Set(Tipo tipo);
 
     std::string getTipoString();
 
