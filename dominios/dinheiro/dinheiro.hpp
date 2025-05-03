@@ -5,10 +5,11 @@ class Dinheiro{
 private:
     float dinheiro;
     bool valido;
+    void validarDinheiro(float);
 public:
     float getDinheiro();
     void setDinheiro(float);
-    void validarDinheiro(float);
+    
 
 };
 

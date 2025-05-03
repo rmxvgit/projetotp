@@ -9,8 +9,9 @@ class codigoNegocio{
     private:
             static const int limite = 12;
             string codN;
-    public:
             void testeValidez(const string&);
+    public:
+            
             string Get();
             void Set(const string&);
 
