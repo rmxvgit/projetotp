@@ -7,9 +7,9 @@ private:
     bool valido;
     void validarDinheiro(float);
 public:
-    float getDinheiro();
-    void setDinheiro(float);
-    
+    float Get();
+    void Set(float);
+
 
 };
 

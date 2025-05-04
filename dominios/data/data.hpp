@@ -7,8 +7,8 @@ class Data{
     private:
         string data;
         void validarData(string);
-    
+
     public:
         void Set(string);
-        string get();
+        string Get();
 };

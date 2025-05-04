@@ -3,7 +3,7 @@
 #include <stdexcept>
 using namespace std;
 
-float Dinheiro::getDinheiro(){
+float Dinheiro::Get(){
     return this->dinheiro;
 }
 
@@ -14,7 +14,7 @@ float Dinheiro::getDinheiro(){
 
  }
 
- void Dinheiro::setDinheiro(float dinheiro){
+ void Dinheiro::Set(float dinheiro){
     validarDinheiro(dinheiro);
     this->dinheiro = dinheiro;
 

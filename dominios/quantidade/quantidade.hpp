@@ -5,6 +5,6 @@ class Quantidade{
         int quantidade;
         bool validate(int);
     public:
-        int getQuantidade();
-        void setQuantidade(int);
+        int Get();
+        void Set(int);
 };

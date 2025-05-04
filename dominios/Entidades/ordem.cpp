@@ -1,10 +1,12 @@
 #include "ordem.hpp"
+#include <string>
 
-Ordem::Ordem(const string& codigo, int quantidade, const string& codNegociacao, float preco){
+Ordem::Ordem(const string& codigo, int quantidade, const string& codNegociacao, float preco, const string& data){
     this->codigo.Set(codigo);
-    this->quantidade.setQuantidade(quantidade);
-    this->negociacao.setCod(codNegociacao);
-    this->preco.setDinheiro(preco);
+    this->quantidade.Set(quantidade);
+    this->negociacao.Set(codNegociacao);
+    this->preco.Set(preco);
+    this->data.Set(data);
 }
 
 void Ordem::setCodigo(const Codigo& codigo) {
@@ -20,7 +22,7 @@ void Ordem::setQuantidade(const Quantidade& quantidade){
 }
 
 void Ordem::setQuantidade(int quantidade) {
-    this->quantidade.setQuantidade(quantidade);
+    this->quantidade.Set(quantidade);
 }
 
 void Ordem::setCodigoNegocio(const codigoNegocio& negociacao) {
@@ -28,7 +30,15 @@ void Ordem::setCodigoNegocio(const codigoNegocio& negociacao) {
 }
 
 void Ordem::setCodigoNegocio(const string& negociacao) {
-    this->negociacao.setCod(negociacao);
+    this->negociacao.Set(negociacao);
+}
+
+void Ordem::SetData(const string& data) {
+    this->data.Set(data);
+}
+
+void Ordem::SetData(const Data& data) {
+    this->data = data;
 }
 
 void Ordem::setPreco(const Dinheiro& preco) {
@@ -36,5 +46,5 @@ void Ordem::setPreco(const Dinheiro& preco) {
 }
 
 void Ordem::setPreco(float preco) {
-    this->preco.setDinheiro(preco);
+    this->preco.Set(preco);
 }

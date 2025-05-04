@@ -1,6 +1,6 @@
 #include "data.hpp"
+#include <stdexcept>
 #include <string>
-#include <iostream>
 
 void Data::validarData(string data){
     int dia;
@@ -21,13 +21,13 @@ void Data::validarData(string data){
     //transformando strings em ints
     temp = data.substr(0,4);
     ano = stoi(temp);
-    
+
     temp = data.substr(4,2);
     mes = stoi(temp);
 
     temp = data.substr(6,2);
     dia = stoi(temp);
-    
+
     //Checagem do mês
     if(mes > 12){
         throw invalid_argument("formato do mes errado");
@@ -64,7 +64,7 @@ void Data::validarData(string data){
 }
 
 
-string Data::get(){
+string Data::Get(){
     return data;
 }
 
@@ -72,4 +72,3 @@ void Data::Set(string data){
     validarData(data);
     this->data = data;
 }
-

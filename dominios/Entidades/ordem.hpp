@@ -4,16 +4,18 @@
 #include "../quantidade/quantidade.hpp"
 #include "../codigo/codigo.hpp"
 #include "../negociarCode/negociarCode.hpp"
+#include "../data/data.hpp"
 
 class Ordem {
     private:
         Codigo        codigo;
+        Data          data;
         Quantidade    quantidade;
         codigoNegocio negociacao;
         Dinheiro      preco;
 
     public:
-        Ordem(const string& codigo, int quantidade, const string& codNegociacao, float preco);
+        Ordem(const string&, int, const string&, float, const string&);
         void setCodigo(const Codigo&);
         void setCodigo(const string&);
 
@@ -26,10 +28,14 @@ class Ordem {
         void setPreco(const Dinheiro&);
         void setPreco(float);
 
+        void SetData(const Data& data);
+        void SetData(const string& data);
+
         inline Quantidade&     getQuantidade();
         inline Codigo&         getCodigo();
         inline codigoNegocio&  getNegociacao();
         inline Dinheiro&       getPreco();
+        inline Data&           getData();
 };
 
 Quantidade& Ordem::getQuantidade() {
@@ -38,6 +44,10 @@ Quantidade& Ordem::getQuantidade() {
 
 Codigo& Ordem::getCodigo(){
     return this->codigo;
+}
+
+Data& Ordem::getData() {
+    return this->data;
 }
 
 codigoNegocio& Ordem::getNegociacao() {

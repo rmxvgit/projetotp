@@ -50,11 +50,12 @@ int main(){
     // #######################################################
     cout  << endl << "Teste da classe ordem" << endl;
 
-    Ordem ordem("111111111", 3, "111111111111", 10.5);
+    Ordem ordem("111111111", 3, "111111111111", 10.5, "20051212");
     cout << ordem.getCodigo().Get() << endl;
-    cout << ordem.getQuantidade().getQuantidade() << endl;
+    cout << ordem.getQuantidade().Get() << endl;
     cout << ordem.getNegociacao().Get() << endl;
-    cout << ordem.getPreco().getDinheiro() << endl;
+    cout << ordem.getPreco().Get() << endl;
+    cout << ordem.getData().Get() << endl;
 
     // #######################################################
 

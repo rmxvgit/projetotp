@@ -1,7 +1,7 @@
 #include "quantidade.hpp"
 #include <stdexcept>
 
-int Quantidade::getQuantidade(){
+int Quantidade::Get(){
     return this->quantidade;
 }
 
@@ -10,7 +10,7 @@ bool Quantidade::validate(int quantidade){
     return false;
 }
 
-void Quantidade::setQuantidade(int quantidade){
+void Quantidade::Set(int quantidade){
     bool isValid = Quantidade::validate(quantidade);
     if (!isValid){
         throw std::invalid_argument("quantidade inválida");
