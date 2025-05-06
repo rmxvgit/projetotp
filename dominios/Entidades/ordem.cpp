@@ -9,6 +9,14 @@ Ordem::Ordem(const string& codigo, int quantidade, const string& codNegociacao, 
     this->data.Set(data);
 }
 
+Ordem::Ordem() {
+    this->codigo = Codigo();
+    this->quantidade = Quantidade();
+    this->negociacao = codigoNegocio();
+    this->preco = Dinheiro();
+    this->data = Data();
+}
+
 void Ordem::setCodigo(const Codigo& codigo) {
     this->codigo = codigo;
 }

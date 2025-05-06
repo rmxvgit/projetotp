@@ -2,6 +2,8 @@
 #include "Entidades/conta.hpp"
 #include "Entidades/ordem.hpp"
 #include "Entidades/carteira.hpp"
+#include "negociarCode/negociarCode.hpp"
+#include "quantidade/quantidade.hpp"
 
 
 
@@ -48,7 +50,7 @@ int main(){
 
 
     // #######################################################
-    cout  << endl << "Teste da classe ordem" << endl;
+    cout  << endl << "TESTE DA ORDEM COM CONSTRUTUOR" << endl;
 
     Ordem ordem("111111111", 3, "111111111111", 10.5, "20051212");
     cout << ordem.getCodigo().Get() << endl;
@@ -59,21 +61,38 @@ int main(){
 
     // #######################################################
 
-    cout << "DEFINICAO DA CARTEIRA" << endl;
+    cout  << endl << "TESTE DA ORDEM SEM CONSTRUTUOR:" << endl;
+    Ordem ordem2;
+
+    ordem2.setCodigoNegocio("111111111111");
+    ordem2.setQuantidade(3);
+    ordem2.setCodigo("111111111");
+    ordem2.setPreco(15.2);
+    ordem2.SetData("20150704");
+
+    cout << ordem.getCodigo().Get() << endl;
+    cout << ordem.getQuantidade().Get() << endl;
+    cout << ordem.getNegociacao().Get() << endl;
+    cout << ordem.getPreco().Get() << endl;
+    cout << ordem.getData().Get() << endl;
+
+
+    // #######################################################
+
+    cout << endl << "DEFINICAO DA CARTEIRA:" << endl;
+    Carteira carteira;
     Perfil perfil;
     Codigo codigo;
-    Carteira carteira;
+    Name nomeCarteira;
 
-    Perfil::Tipo tipo = Perfil::Tipo::AGRESSIVO;
-
-    perfil.Set(tipo);
+    perfil.Set(Perfil::Tipo::AGRESSIVO);
     carteira.setPerfil(perfil);
 
     codigo.Set("123456789");
     carteira.setCodigo(codigo);
 
-    name.Set("carlinhos maia");
-    carteira.setName(name);
+    nomeCarteira.Set("carlinhos maia");
+    carteira.setName(nomeCarteira);
 
     cout << "Nome: " << carteira.getName().Get() << endl;
     cout << "Perfil: " << carteira.getPerfil().getTipoString() << endl;

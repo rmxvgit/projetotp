@@ -10,8 +10,10 @@ class codigoNegocio{
             static const int limite = 12;
             string codN;
             void testeValidez(const string&);
+            bool isNumeric(const char& c);
+            bool isLetter(const char& c);
     public:
-            
+
             string Get();
             void Set(const string&);
 

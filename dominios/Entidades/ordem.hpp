@@ -15,6 +15,7 @@ class Ordem {
         Dinheiro      preco;
 
     public:
+        Ordem();
         Ordem(const string&, int, const string&, float, const string&);
         void setCodigo(const Codigo&);
         void setCodigo(const string&);
