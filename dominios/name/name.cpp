@@ -9,7 +9,7 @@ bool Name::validator(const string &userName){
     };
 
     if(!amountOfWhitespace(userName)){
-        throw invalid_argument("O nome do usuário não pode ter seguência de espaço em branco.");
+        throw invalid_argument("O nome do usuário não pode ter seguência de espaços em branco.");
     };
 
     if(!defaultOfTheCharecter(userName)) {
@@ -19,19 +19,14 @@ bool Name::validator(const string &userName){
     return true;
 }
 
-bool Name :: defaultOfTheCharecter( const string &userName){
-
-    for(const char& ch: userName){
-
-        int convertingStringToCharacter = int(ch);
-
-        if((convertingStringToCharacter < 32) ||
-        ((convertingStringToCharacter >= 33) && (convertingStringToCharacter <= 47)) ||
-        ((convertingStringToCharacter >= 91) && (convertingStringToCharacter <= 96)) ||
-        ((convertingStringToCharacter >= 123) && (convertingStringToCharacter <= 127))) return false;
+bool Name::defaultOfTheCharecter(const string &userName) {
+    for (const char &ch : userName) {
+        if (!(ch == ' ' || (ch >= '0' && ch <= '9') || (ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))) {
+            return false;
+        }
     }
     return true;
-};
+}
 
 bool Name :: amountOfWhitespace(const string &userName){
 
