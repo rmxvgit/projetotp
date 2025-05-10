@@ -5,7 +5,7 @@ using namespace std;
 class testeDeFumacaNome {
     private:
         string nomeComComprimentoValido = "Eren Jaeger";
-        string nomeComcomprimentoInvalido = "Roronoa Zoro no Ichibansenpai";
+        string nomeComComprimentoInvalido = "Roronoa Zoro no Ichibansenpai";
         string nomeComCaracteresValidos = "99 Edward Elric";
         string nomeComCaracteresInvalidos = "Ichig@ Kurosak!";
         string nomeComEspacamentoValido = "S a t o r u G o j o";
@@ -23,8 +23,8 @@ class testeDeFumacaNome {
 
     
     public:
-        int sucesso = 1;
-        int falha = 0;
+        const static int sucesso = 0;
+        const static int falha = -1;
 
         int run();
 };

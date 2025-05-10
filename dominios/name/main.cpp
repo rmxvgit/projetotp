@@ -11,9 +11,9 @@ int main(){
     testeDeFumacaNome testandoAsCondicoes;
 
     switch(testandoAsCondicoes.run()){
-        case testeDeFumacaNome::sucesso: cout << "Sucesso" << endl;
+        case testeDeFumacaNome ::sucesso : cout << "SUCESSO" << endl;
         break;
-        case testeDeFumacaNome::falha: cout << "Falha" << endl;
+        case testeDeFumacaNome::falha: cout << "FALHA" << endl;
         break;
     }
     return 0;

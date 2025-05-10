@@ -13,6 +13,9 @@ void testeDeFumacaNome :: deletarNome(){
 void testeDeFumacaNome :: testarNomeComComprimentoValido(){
     try {
         nome->Set(nomeComComprimentoValido);
+        if(nome->Get() != nomeComComprimentoValido) {
+            estado = falha;
+        };
     }
     catch(invalid_argument &excecao){
         estado = falha;
@@ -23,6 +26,9 @@ void testeDeFumacaNome :: testarNomeComComprimentoValido(){
 void testeDeFumacaNome :: testarNomeComCaracteresValidos(){
     try {
         nome->Set(nomeComCaracteresValidos);
+        if(nome->Get() != nomeComCaracteresValidos) {
+            estado = falha;
+        };
     }
     catch(invalid_argument &excecao){
         estado = falha;
@@ -33,6 +39,9 @@ void testeDeFumacaNome :: testarNomeComCaracteresValidos(){
 void testeDeFumacaNome :: testarNomeComEspacamentoValido(){
     try {
         nome->Set(nomeComEspacamentoValido);
+        if(nome->Get() != nomeComEspacamentoValido) {
+            estado = falha;
+        };
     }
     catch(invalid_argument &excecao){
         estado = falha;
@@ -46,17 +55,21 @@ void testeDeFumacaNome :: testarNomeComCaracteresInvalidos(){
         estado = falha;
     }
     catch(invalid_argument &excecao){
-        return;
+        if(nome->Get() == nomeComCaracteresInvalidos) {
+            estado = falha;
+        };
     }
 };
 
 void testeDeFumacaNome :: testarNomeComComprimentoInvalido(){
     try{
-        nome->Set(nomeComcomprimentoInvalido);
+        nome->Set(nomeComComprimentoInvalido);
         estado = falha;
     }
     catch(invalid_argument &excecao){
-        return;
+        if(nome->Get() == nomeComComprimentoInvalido) {
+            estado = falha;
+        };
     }
 };
 
@@ -66,7 +79,9 @@ void testeDeFumacaNome :: testarNomeComEspacamentoInvalido(){
         estado = falha;
     }
     catch(invalid_argument &excecao){
-        return;
+        if(nome->Get() == nomeComEspacamentoInvalido) {
+            estado = falha;
+        };
     }
 };
 
