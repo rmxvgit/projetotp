@@ -134,4 +134,6 @@ int passwordSmokeTest::run(){
 
     tearDowntPassword();
 
-};
+    return state;
+
+}

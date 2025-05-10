@@ -6,7 +6,7 @@ class passwordSmokeTest {
     private:
         const string passwordValid = "Val$d3";
 
-        const string passwordWithInvalidLength = "#1Error";
+        const string passwordWithInvalidLength = "#1Er";
 
         const string passwordWithInvalidCharacters = "@2Erro";
 
