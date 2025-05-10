@@ -30,7 +30,7 @@ bool Name::defaultOfTheCharecter(const string &userName) {
 
 bool Name :: sequenceOfSpacesInBranch(const string &userName){
 
-        for(int index = 0 ; index <= userName.length(); index ++){
+        for(int index = 0 ; index < userName.length() - 1 ; index ++){
             
             if((userName[index] == ' ') && (userName[index + 1] == ' ') ){
                 return false;
