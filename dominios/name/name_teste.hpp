@@ -7,14 +7,19 @@ class testeDeFumacaNome {
         string nomeComcomprimentoInvalido = "Roronoa Zoro no Ichibansenpai";
         string nomeComCaracteresValidos = "99 Edward Elric";
         string nomeComCaracteresInvalidos = "Ichig@ Kurosak!";
-        string nomeComEspacoEmBrancoValido = "S a t o r u G o j o";
-        string nomeComEspacoEmBrancoInvalido = "Tanjiro  Kamado";
+        string nomeComEspacamentoValido = "S a t o r u G o j o";
+        string nomeComEspacamentoInvalido = "Tanjiro  Kamado";
         Name *nome;
         int estado;
         void configurarNome();
         void deletarNome();
-        void testarCenarioValido();
-        void testarCenarioInvalido();
+        void testarNomeComComprimentoValido();
+        void testarNomeComComprimentoInvalido();
+        void testarNomeComCaracteresValidos();
+        void testarNomeComCaracteresInvalidos();
+        void testarNomeComEspacamentoValido();
+        void testarNomeComEspacamentoInvalido();
+
     
     public:
         int sucesso = 1;
