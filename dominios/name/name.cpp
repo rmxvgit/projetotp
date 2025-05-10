@@ -31,19 +31,20 @@ bool Name::defaultOfTheCharecter(const string &userName) {
 bool Name :: amountOfWhitespace(const string &userName){
 
     int sequenceOfWhitespace = 0;
-    for(const char& ch: userName){
+        for(const char& ch: userName){
 
-        int convertingStringToCharacter = int(ch);
 
-        if(convertingStringToCharacter == 32){
-            sequenceOfWhitespace ++;
-            if(sequenceOfWhitespace == 2) return false;
-        }else {
-            sequenceOfWhitespace = 0 ;
-        }
-
+            if(ch == ' '){
+                sequenceOfWhitespace ++;
+                if(ch == 2)
+                {
+                    return false ;
+                }else {
+                    sequenceOfWhitespace = 0;
+                };
+        };
+        return true;
     }
-    return true;
 }
 
 void Name::Set(const string &userName){
