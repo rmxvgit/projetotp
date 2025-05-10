@@ -1,24 +1,20 @@
 #include "name.hpp"
 #include <stdexcept>
 
-Name::Name() {
-    this->name = "";
-}
-
-Name::Name(const string& userName) {
-    if(!validator(userName)) {/* error */};
-
-    this->name = userName;
-}
-
-/*Metodo responsável por analisar se o nome digitado pelo usuário segue os padrões estabelecidos */
+/*Verifica se o nome digitado pelo usuario segue as normas estabelecidas */
 bool Name::validator(const string &userName){
 
-    if(userName.length() > MAXIMUM_LENGTH) return false;//Verificando se tamanho do vetor não passa de 20 caracteres
+    if(userName.length() > MAXIMUM_LENGTH){
+        throw invalid_argument("O nome do usuário não pode conter mais de 20 caracteres.");
+    };
 
-    if(!amountOfWhitespace(userName)) return false; //Verificando se os caracteres contidos no vetor são permitidos pela definição
+    if(!amountOfWhitespace(userName)){
+        throw invalid_argument("O nome do usuário não pode ter seguência de espaço em branco.");
+    };
 
-    if(!defaultOfTheCharecter(userName)) return false;// Verificando se há uma segência de espaços em branco
+    if(!defaultOfTheCharecter(userName)) {
+        throw invalid_argument("Não pode haver caracteres especiais no nome do usuário.");
+    }
 
     return true;
 }
@@ -56,9 +52,15 @@ bool Name :: amountOfWhitespace(const string &userName){
 }
 
 void Name::Set(const string &userName){
-    if(!validator(userName)) {
-        throw invalid_argument("nome de usuário inválido");
-    };
+    validator(userName) ;
+    this->name = userName;
+}
 
+Name::Name() {
+    this->name = "";
+}
+
+Name::Name(const string& userName) {
+    validator(userName);
     this->name = userName;
 }
