@@ -1,6 +1,7 @@
 #include <iostream>
 #include "name.hpp"
 
+using namespace std;
 class testeDeFumacaNome {
     private:
         string nomeComComprimentoValido = "Eren Jaeger";
@@ -25,5 +26,5 @@ class testeDeFumacaNome {
         int sucesso = 1;
         int falha = 0;
 
-        void run();
+        int run();
 };
