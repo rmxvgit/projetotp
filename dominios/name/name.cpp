@@ -8,7 +8,7 @@ bool Name::validator(const string &userName){
         throw invalid_argument("O nome do usuário não pode conter mais de 20 caracteres.");
     };
 
-    if(!amountOfWhitespace(userName)){
+    if(!sequenceOfSpacesInBranch(userName)){
         throw invalid_argument("O nome do usuário não pode ter seguência de espaços em branco.");
     };
 
@@ -28,7 +28,7 @@ bool Name::defaultOfTheCharecter(const string &userName) {
     return true;
 }
 
-bool Name :: amountOfWhitespace(const string &userName){
+bool Name :: sequenceOfSpacesInBranch(const string &userName){
 
         for(int index = 0 ; index <= userName.length(); index ++){
             

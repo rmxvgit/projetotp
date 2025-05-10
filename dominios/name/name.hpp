@@ -20,7 +20,7 @@ class Name{
 
 
         // private methods: ---------------------------
-        bool amountOfWhitespace(const string &);
+        bool sequenceOfSpacesInBranch(const string &);
         bool defaultOfTheCharecter(const string &);
         bool validator(const string &);
 
