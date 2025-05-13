@@ -3,6 +3,7 @@
 #include "Entidades/ordem.hpp"
 #include "Entidades/carteira.hpp"
 #include "negociarCode/negociarCode.hpp"
+#include "cpf/cpf_teste.hpp"
 #include "quantidade/quantidade.hpp"
 
 
@@ -98,7 +99,8 @@ int main(){
     cout << "Perfil: " << carteira.getPerfil().getTipoString() << endl;
     cout << "Codigo: " << carteira.getCodigo().Get() << endl;
 
+    //########################################################
 
-
+    CpfSmokeTest::Run();
     return 0;
 }

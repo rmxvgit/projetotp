@@ -1,8 +1,6 @@
 #include <iostream>
-#include <stdexcept>
 
 #include  "name_teste.hpp"
-#include  "name.hpp"
 
 using namespace std;
 

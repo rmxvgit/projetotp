@@ -1,8 +1,4 @@
-
-#ifndef CPF_HPP_INCLUDED
-#define CPF_HPP_INCLUDED
-#endif //CPF_HPP_INCLUDED
-
+#pragma once
 
 #include <cstdint>
 #include <string>
