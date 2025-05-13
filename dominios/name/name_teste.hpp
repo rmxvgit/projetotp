@@ -1,4 +1,3 @@
-#include <iostream>
 #include "name.hpp"
 
 using namespace std;
@@ -16,7 +15,7 @@ class testeDeFumacaNome {
 
         void configurarNome();
         void deletarNome();
-        
+
         void testarNomeComComprimentoValido();
         void testarNomeComComprimentoInvalido();
         void testarNomeComCaracteresValidos();
@@ -24,7 +23,7 @@ class testeDeFumacaNome {
         void testarNomeComEspacamentoValido();
         void testarNomeComEspacamentoInvalido();
 
-    
+
     public:
         const static int sucesso = 0;
         const static int falha = -1;

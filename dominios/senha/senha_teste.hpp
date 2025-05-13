@@ -1,4 +1,3 @@
-#include <iostream>
 #include "senha.hpp"
 
 using namespace std;
@@ -35,7 +34,7 @@ class passwordSmokeTest {
         void testPasswordWithoutLowercase();
         void testPasswordWithoutSpecialCharacter();
 
-    
+
     public:
         const static int sucess = 0;
         const static int failure = -1;
