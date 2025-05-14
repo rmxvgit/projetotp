@@ -1,101 +1,83 @@
 #include <stdexcept>
-#include "name_teste.hpp"
+#include <iostream>
+#include "name_test.hpp"
 
-void testeDeFumacaNome :: configurarNome(){
-    nome = new Name();
-    estado = sucesso;
-}
+void NameSmokeTest :: setUp(){
+    nameInstance = new Name();
+    testStatus = true;
+};
 
-void testeDeFumacaNome :: deletarNome(){
-    delete nome;
-}
+void NameSmokeTest :: tearDown(){
+    delete nameInstance;
+};
 
-void testeDeFumacaNome :: testarNomeComComprimentoValido(){
+void NameSmokeTest :: testValidName(){
     try {
-        nome->Set(nomeComComprimentoValido);
-        if(nome->Get() != nomeComComprimentoValido) {
-            estado = falha;
+        nameInstance->Set(validName);
+        if(nameInstance->Get() != validName) {
+            testStatus = false;
+            cout << "testValidName failed: name invalid in domain name was accepted."<<  endl; 
         };
     }
-    catch(invalid_argument &excecao){
-        estado = falha;
+    catch(invalid_argument &exp){
+        testStatus = false;
+         cout << "testValidName failed: "<< exp.what() <<  endl; 
     }
-    
 };
 
-void testeDeFumacaNome :: testarNomeComCaracteresValidos(){
-    try {
-        nome->Set(nomeComCaracteresValidos);
-        if(nome->Get() != nomeComCaracteresValidos) {
-            estado = falha;
-        };
-    }
-    catch(invalid_argument &excecao){
-        estado = falha;
-    }
-    
-};
 
-void testeDeFumacaNome :: testarNomeComEspacamentoValido(){
-    try {
-        nome->Set(nomeComEspacamentoValido);
-        if(nome->Get() != nomeComEspacamentoValido) {
-            estado = falha;
-        };
-    }
-    catch(invalid_argument &excecao){
-        estado = falha;
-    }
-    
-};
-
-void testeDeFumacaNome :: testarNomeComCaracteresInvalidos(){
+void NameSmokeTest :: testInvalidLength(){
     try{
-        nome->Set(nomeComCaracteresInvalidos);
-        estado = falha;
+        nameInstance->Set(invalidLengthName);
+        testStatus = false; 
+        cout << "testInvalidLength failed: Invalid length in domain name was accepted." << endl;
     }
-    catch(invalid_argument &excecao){
-        if(nome->Get() == nomeComCaracteresInvalidos) {
-            estado = falha;
+    catch(invalid_argument &exp){
+        if(nameInstance->Get() == invalidLengthName) {
+            testStatus = false;
+            cout << "testInvalidLength: Exception thrown, but invalid name was still set: " << exp.what() << endl;
         };
     }
+     
 };
 
-void testeDeFumacaNome :: testarNomeComComprimentoInvalido(){
+void NameSmokeTest :: testInvalidCharacter(){
     try{
-        nome->Set(nomeComComprimentoInvalido);
-        estado = falha;
+        nameInstance->Set(invalidCharacterName);
+        testStatus = false;
+        cout << "testInvalidCharacter failed: Invalid character in domain name was accepted." << endl;
     }
-    catch(invalid_argument &excecao){
-        if(nome->Get() == nomeComComprimentoInvalido) {
-            estado = falha;
+    catch(invalid_argument &exp){
+        if(nameInstance->Get() == invalidCharacterName) {
+            testStatus = false;
+             cout << "testInvalidCharacter failed: Exception thrown, but invalid name was still set. Error: " << exp.what() << endl;
         };
     }
 };
 
-void testeDeFumacaNome :: testarNomeComEspacamentoInvalido(){
+void NameSmokeTest :: testInvalidSpacing(){
     try{
-        nome->Set(nomeComEspacamentoInvalido);
-        estado = falha;
+        nameInstance->Set(invalidSpacingName);
+        testStatus = false;
+        cout << "testInvalidSpacing failed: Invalid spacing in domain name was accepted." << endl;
     }
-    catch(invalid_argument &excecao){
-        if(nome->Get() == nomeComEspacamentoInvalido) {
-            estado = falha;
-        };
+    catch(invalid_argument &exp){
+        if(nameInstance->Get() == invalidSpacingName) {
+            testStatus = false;
+            cout << "ttestInvalidSpacing failed: Exception thrown, but invalid name was still set. Error: " << exp.what() << endl;
+        }
     }
 };
 
-int testeDeFumacaNome :: run(){
-    configurarNome();
-    testarNomeComCaracteresValidos();
-    testarNomeComCaracteresInvalidos();
-    testarNomeComComprimentoValido();
-    testarNomeComComprimentoInvalido();
-    testarNomeComEspacamentoValido();
-    testarNomeComEspacamentoInvalido();
-    deletarNome();
+bool NameSmokeTest :: run(){
+    setUp();
+    testValidName();
+    testInvalidLength();
+    testInvalidCharacter();
+    testInvalidSpacing();
+    tearDown();
 
-    return estado;
+    return testStatus;
 };
 
 

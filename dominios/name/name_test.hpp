@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class SmokeTestName {
+class NameSmokeTest {
     private:
        const string validName = "Eren Jaeger";
        const string invalidLengthName = "Roronoa Zoro no Ichibansenpai";

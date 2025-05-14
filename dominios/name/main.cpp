@@ -1,18 +1,18 @@
 #include <iostream>
-
-#include  "name_teste.hpp"
+#include  "name_test.hpp"
 
 using namespace std;
 
 int main(){
 
-    testeDeFumacaNome testandoAsCondicoes;
+    NameSmokeTest testandoAsCondicoes;
 
     switch(testandoAsCondicoes.run()){
-        case testeDeFumacaNome ::sucesso : cout << "SUCESSO" << endl;
-        break;
-        case testeDeFumacaNome::falha: cout << "FALHA" << endl;
-        break;
-    }
+        case true :
+            cout << "Teste do dominio nome realizado com sucesso" << endl;
+            break;
+        case false: 
+            break;
+    };
     return 0;
 }

@@ -12,25 +12,19 @@ using namespace std;
 
 class Name{
     private :
-        // constants: ---------------------------------
         static const int MAXIMUM_LENGTH = 20;
 
-        // atributes: ---------------------------------
         string name;
 
-
-        // private methods: ---------------------------
-        bool sequenceOfSpacesInBranch(const string &);
-        bool defaultOfTheCharecter(const string &);
+        bool hasConsecutiveSpaces(const string &);
+        bool hasInvalidCharacters(const string &);
         bool validator(const string &);
 
     public:
 
-        // constructors --------------------------------
         Name();
         Name(const string &);
 
-        // gets and sets -------------------------------
         string Get();
         void Set(const string &);
 };
