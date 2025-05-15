@@ -2,8 +2,8 @@
 #include <iostream>
 #include <stdexcept>
 
-const string DataSmokeTest::valid_date = "2012-06-07";
-const string DataSmokeTest::invalid_date = "07-06-2012";
+const string DataSmokeTest::valid_date = "20120607";
+const string DataSmokeTest::invalid_date = "07062012";
 
 bool DataSmokeTest::Run() {
     DataSmokeTest testing;
@@ -22,7 +22,7 @@ void DataSmokeTest::test1(){
     try {
         this->date.Set(valid_date);
     } catch (invalid_argument a) {
-        cout << "erro no teste 1 da data" << endl;
+        cout << "Error in the first date test" << endl;
         this->state = false;
         return;
     }
@@ -34,7 +34,7 @@ void DataSmokeTest::test2(){
     } catch (invalid_argument a) {
         return;
     }
-    cout << "erro no teste 2 da data" << endl;
+    cout << "Error in the second date test" << endl;
     this->state = false;
     return;
 }

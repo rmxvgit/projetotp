@@ -8,6 +8,7 @@
 #include "password/password_test.hpp"
 #include "quantidade/quantidade.hpp"
 #include "Entidades/account_test.hpp"
+#include "data/data_teste.hpp"
 
 
 
@@ -104,17 +105,18 @@ int main(){
 
     //########################################################
 
-    
+
 
      NameSmokeTest testName;
      PasswordSmokeTest testPassword;
-     CpfSmokeTest testCpf;
      AccountSmokeTest testAccount;
 
+
     if(testName.run())      cout << "Success in the name domain test" << endl;
-    if(testCpf.Run())       cout << "Success in the CPF domain test" << endl;
     if(testPassword.run())  cout << "Success in the password domain test" << endl;
     if(testAccount.run())   cout << "Success in the account entity test" << endl;
+    if(CpfSmokeTest::Run())       cout << "Success in the CPF domain test" << endl;
+    if(DataSmokeTest::Run())      cout << "Success in the Data domain test" << endl;
 
 
 
