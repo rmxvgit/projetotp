@@ -1,25 +1,25 @@
 #include "name.hpp"
 #include <stdexcept>
 
-/*Verifica se o nome digitado pelo usuario segue as normas estabelecidas */
+/*Verifies if the name entered by the user follows the established rules */
 bool Name::validator(const string &userName){
 
     if(userName.length() > MAXIMUM_LENGTH){
-        throw invalid_argument("O nome do usuário não pode conter mais de 20 caracteres.");
+        throw invalid_argument("The user's name cannot contain more than 20 characters.");
     };
 
-    if(!sequenceOfSpacesInBranch(userName)){
-        throw invalid_argument("O nome do usuário não pode ter seguência de espaços em branco.");
+    if(!hasConsecutiveSpaces(userName)){
+        throw invalid_argument("The user's name cannot have consecutive spaces.");
     };
 
-    if(!defaultOfTheCharecter(userName)) {
-        throw invalid_argument("Não pode haver caracteres especiais no nome do usuário.");
+    if(!hasInvalidCharacters(userName)) {
+        throw invalid_argument("The user's name cannot contain special characters.");
     }
 
     return true;
 }
 
-bool Name::defaultOfTheCharecter(const string &userName) {
+bool Name::hasInvalidCharacters(const string &userName) {
     for (const char &ch : userName) {
         if (!(ch == ' ' || (ch >= '0' && ch <= '9') || (ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))) {
             return false;
@@ -28,11 +28,11 @@ bool Name::defaultOfTheCharecter(const string &userName) {
     return true;
 }
 
-bool Name :: sequenceOfSpacesInBranch(const string &userName){
+bool Name :: hasConsecutiveSpaces(const string &userName){
 
-        for(int index = 0 ; index < userName.length() - 1 ; index ++){
+        for(int i = 0 ; i < userName.length() - 1 ; i ++){
             
-            if((userName[index] == ' ') && (userName[index + 1] == ' ') ){
+            if((userName[i] == ' ') && (userName[i + 1] == ' ') ){
                 return false;
             }
         }

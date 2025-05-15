@@ -5,15 +5,15 @@
 using namespace std;
 
 
-class Senha{
+class Password{
     private:
         string password;
 
         bool validate(const string&);
 
     public:
-        Senha();
-        Senha(const string&);
+        Password();
+        Password(const string&);
 
         string Get();
         void Set(const string&);

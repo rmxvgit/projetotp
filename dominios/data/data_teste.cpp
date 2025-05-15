@@ -1,8 +1,11 @@
 
+
 //Work in progress
+
 #include "data_teste.hpp"
 #include <iostream>
 #include <stdexcept>
+
 
 const string DataSmokeTest::formatoInvalido = "12/04/21rs";
 const string DataSmokeTest::tamInvalido = "1200920054";
@@ -15,8 +18,6 @@ const string DataSmokeTest::mes_excede_max_28_dias = "19000229";
 void DataSmokeTest::setUp(){
     this->state = true;
 }
-
-//destrutor?
 
 void DataSmokeTest::testFev1(){
     try{
@@ -110,3 +111,4 @@ bool DataSmokeTest::run(){
 
 
 }
+

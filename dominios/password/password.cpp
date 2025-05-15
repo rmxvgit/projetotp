@@ -1,4 +1,4 @@
-#include "senha.hpp"
+#include "password.hpp"
 
 #include <stdexcept>
 #include <string>
@@ -9,11 +9,11 @@
 using namespace std;
 
 
-string Senha::Get(){
+string Password::Get(){
     return this->password;
 }
 
-bool Senha::validate(const string& password){
+bool Password::validate(const string& password){
     if (password.length() != 6 ) return false;
 
     regex pattern("^[A-Za-z0-9#\\$%&]{6}$");
@@ -35,18 +35,18 @@ bool Senha::validate(const string& password){
 
 }
 
-void Senha::Set(const string& password){
+void Password::Set(const string& password){
     if (!validate(password)) {
-        throw invalid_argument("senha inválida");
+        throw invalid_argument("Password invalid");
     }
     this->password = password;
 }
 
-Senha::Senha() {
+Password::Password() {
     this->password = "";
 }
 
-Senha::Senha(const string&  password) {
+Password::Password(const string&  password) {
     if (!validate(password)) {/* erro */};
     this->password = password;
 }

@@ -1,10 +1,13 @@
 #include <iostream>
-#include "Entidades/conta.hpp"
+#include "Entidades/account.hpp"
 #include "Entidades/ordem.hpp"
 #include "Entidades/carteira.hpp"
 #include "negociarCode/negociarCode.hpp"
 #include "cpf/cpf_teste.hpp"
+#include "name/name_test.hpp"
+#include "password/password_test.hpp"
 #include "quantidade/quantidade.hpp"
+#include "Entidades/account_test.hpp"
 
 
 
@@ -13,24 +16,24 @@ using namespace std;
 int main(){
     cout << "CONTA COM INICIALIZAÇÃO PRÉVIA:" << endl;
 
-    Conta conta("batata d", "031.915.716-47", "Aa#123");
+    Account conta("batata d", "031.915.716-47", "Aa#123");
 
     cout << conta.getCpf().Get() << endl;
     cout << conta.getName().Get() << endl;
-    cout << conta.getSenha().Get() << endl;
+    cout << conta.getPassword().Get() << endl;
 
     //########################################################
 
     cout << endl << "CONTA SEM INICIALIZAÇÃO PRÉVIA:" << endl;
 
-    Conta outraConta;
+    Account outraConta;
     outraConta.setCpf("125.453.111-45");
     outraConta.setName("outro nome");
-    outraConta.setSenha("Xx#123");
+    outraConta.setPassword("Xx#123");
 
     cout << outraConta.getCpf().Get() << endl;
     cout << outraConta.getName().Get() << endl;
-    cout << outraConta.getSenha().Get() << endl;
+    cout << outraConta.getPassword().Get() << endl;
 
     //########################################################
 
@@ -39,15 +42,15 @@ int main(){
 
     Cpf cpf("111.111.111-11");
     Name name("nome diff");
-    Senha senha("Cc#123");
-    Conta contaDiferente;
+    Password senha("Cc#123");
+    Account contaDiferente;
     contaDiferente.setCpf(cpf);
     contaDiferente.setName(name);
-    contaDiferente.setSenha(senha);
+    contaDiferente.setPassword(senha);
 
     cout << contaDiferente.getCpf().Get() << endl;
     cout << contaDiferente.getName().Get() << endl;
-    cout << contaDiferente.getSenha().Get() << endl;
+    cout << contaDiferente.getPassword().Get() << endl;
 
 
     // #######################################################
@@ -101,6 +104,20 @@ int main(){
 
     //########################################################
 
-    CpfSmokeTest::Run();
+    
+
+     NameSmokeTest testName;
+     PasswordSmokeTest testPassword;
+     CpfSmokeTest testCpf;
+     AccountSmokeTest testAccount;
+
+    if(testName.run())      cout << "Success in the name domain test" << endl;
+    if(testCpf.Run())       cout << "Success in the CPF domain test" << endl;
+    if(testPassword.run())  cout << "Success in the password domain test" << endl;
+    if(testAccount.run())   cout << "Success in the account entity test" << endl;
+
+
+
+
     return 0;
 }
