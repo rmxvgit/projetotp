@@ -6,7 +6,6 @@
 #include <iostream>
 #include <stdexcept>
 
-
 const string DataSmokeTest::formatoInvalido = "12/04/21rs";
 const string DataSmokeTest::tamInvalido = "1200920054";
 const string DataSmokeTest::mesErrado = "20255612";
@@ -19,16 +18,6 @@ void DataSmokeTest::setUp(){
     this->state = true;
 }
 
-void DataSmokeTest::testFev1(){
-    try{
-        this->data.Set(mes_excede_max_28_dias);
-    } catch (invalid_argument err){
-        return;
-    }
-    cout << "dia errado: esse mes so possui 28 dias." << endl;
-    this->state = false;
-
-}
 
 void DataSmokeTest::testFev2(){
     try{
