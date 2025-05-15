@@ -2,8 +2,11 @@
 #include <stdexcept>
 #include <iostream>
 
+using namespace std;
+
 const float DinheiroSmokeTest::invalidDinheiro = 0.0001;
 const float DinheiroSmokeTest::invalidDinheiro1 = 10000000000000.56;
+
 void DinheiroSmokeTest::setUp(){
     this->state = true;
 }

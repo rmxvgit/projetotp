@@ -16,7 +16,7 @@ class DataSmokeTest{
 
         void setUp();
         void erase();
-        
+
         void testFev1();
         void testFev2();
         void testMesTrinta();
@@ -24,7 +24,7 @@ class DataSmokeTest{
         void testmesInvalido();
         void testDataInvalidaTam();
         void testDataInvalidaForm();
-        
+
         Data data;
         bool state;
 

@@ -18,6 +18,15 @@ void DataSmokeTest::setUp(){
     this->state = true;
 }
 
+void DataSmokeTest::testFev1(){
+    try{
+        this->data.Set(mes_excede_max_28_dias);
+    } catch (invalid_argument err){
+        return;
+    }
+    cout << "dia errado: esse mes so possui 28 dias." << endl;
+    this->state = false;
+}
 
 void DataSmokeTest::testFev2(){
     try{
@@ -96,8 +105,5 @@ bool DataSmokeTest::run(){
     testing.testFev1();
     testing.testFev2();
     return testing.state;
-    
-
 
 }
-
