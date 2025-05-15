@@ -9,8 +9,9 @@
 #include "quantidade/quantidade.hpp"
 #include "Entidades/account_test.hpp"
 #include "data/data_teste.hpp"
-
-
+#include "dinheiro/dinheiro_teste.hpp"
+#include "negociarCode/negociarCode_teste.hpp"
+#include "quantidade/quantidade_teste.hpp"
 
 using namespace std;
 
@@ -110,6 +111,10 @@ int main(){
      NameSmokeTest testName;
      PasswordSmokeTest testPassword;
      AccountSmokeTest testAccount;
+     DinheiroTeste testDinheiro;
+     NegociarCodeTeste testNegociarCode;
+     QuantidadeTeste testQuantidade;
+
 
 
     if(testName.run())      cout << "Success in the name domain test" << endl;
@@ -117,7 +122,9 @@ int main(){
     if(testAccount.run())   cout << "Success in the account entity test" << endl;
     if(CpfSmokeTest::Run())       cout << "Success in the CPF domain test" << endl;
     if(DataSmokeTest::Run())      cout << "Success in the Data domain test" << endl;
-
+    if(testDinheiro.run())        cout << "Success in the Dinheiro domain test" << endl;
+    if(testNegociarCode.run())    cout << "Success in the NegociarCode domain test" << endl;
+    if(testQuantidade.run())      cout << "Success in the Quantidade domain test" << endl;
 
 
 
