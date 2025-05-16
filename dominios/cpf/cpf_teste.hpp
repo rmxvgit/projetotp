@@ -2,8 +2,10 @@
 #include "string"
 #include "cpf.hpp"
 
-using  namespace std ;
+using namespace std;
 
+/// A classe CpfSmokeTest tem o propósito de realizar diversos testes unitários, que checam se o CPF é válido,
+/// considerando diferentes formatos de entrada e casos inválidos.
 class CpfSmokeTest {
     private:
         static const string cpf_with_lenght_exeeded;
@@ -26,5 +28,7 @@ class CpfSmokeTest {
         bool state;
 
     public:
+        /// Esse método executa uma série de outros métodos privados de teste,
+        /// verificando diferentes casos de CPFs inválidos e válidos.
         static bool Run();
 };
