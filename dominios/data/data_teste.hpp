@@ -15,7 +15,6 @@ class DataSmokeTest{
         static const string mes_excede_max_29_dias;
 
         void setUp();
-        void erase();
 
         void testFev1();
         void testFev2();

@@ -1,7 +1,3 @@
-
-
-//Work in progress
-
 #include "data_teste.hpp"
 #include <iostream>
 #include <stdexcept>
