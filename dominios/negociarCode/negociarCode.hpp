@@ -18,6 +18,7 @@ class codigoNegocio{
             /// Os seguintes métodos tem como objetivo checar se o código possui apenas caracteres alfanuméricos. 
             /// Duas condições são definidas: se é numérico ou composto por letras, e se ambas forem falsas, quer dizer que existem caracteres inválidos.
             /// As funções são do tipo bool, e recebem como argumento, passando por referência, um caracter da string, que é checado, e o valor é retornado como true ou false de acordo com os parâmetros ditos.
+            /// Casos as condições não sejam seguidas, o método lança uma excessão de falha.
             bool isNumeric(const char& c);
             bool isLetter(const char& c);
     public:

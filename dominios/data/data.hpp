@@ -12,6 +12,7 @@ class Data{
         ///primeiro, checa-se se o formato é válido - sem caracteres diferentes de números, ou a quantidade diferente do necessário para representação.
         ///depois, é checado o dia é válido tendo em vista o mês, por exemplo, junho só possui 30 dias, logo 31/06 é inválido.
         ///o mesmo foi feito considerando os anos bissextos.
+        ///se algum desses critérios não forem atendidos, o método a seguir lança uma excessão.
         /// @param  
         void validarData(string);
 
