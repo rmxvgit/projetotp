@@ -4,7 +4,6 @@
 using namespace std;
 
 class DataSmokeTest{
-
     private:
         static const string formatoInvalido;
         static const string tamInvalido;
