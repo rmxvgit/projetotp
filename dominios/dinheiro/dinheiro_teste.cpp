@@ -6,9 +6,20 @@ using namespace std;
 
 const float DinheiroSmokeTest::invalidDinheiro = 0.0001;
 const float DinheiroSmokeTest::invalidDinheiro1 = 10000000000000.56;
+const float DinheiroSmokeTest::validDinheiro = 1.00;
 
 void DinheiroSmokeTest::setUp(){
     this->state = true;
+}
+
+void DinheiroSmokeTest::test0(){
+    try{
+        this->dinheiro.Set(validDinheiro);
+    } catch (invalid_argument err){
+        return;  
+        this->state = false;
+        cout << "dinheiro invalido" << endl;
+    }
 }
 
 void DinheiroSmokeTest::test1(){
@@ -33,6 +44,7 @@ void DinheiroSmokeTest::test2(){
 bool DinheiroSmokeTest::run(){
     DinheiroSmokeTest testing = DinheiroSmokeTest();
     testing.setUp();
+    testing.test0();
     testing.test1();
     testing.test2();
     return testing.state;

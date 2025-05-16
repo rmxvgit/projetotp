@@ -7,9 +7,10 @@
 class Dinheiro{
 private:
     float dinheiro;
-    /// O método de validar dinheiro lança uma excessão quando o dinheiro está fora da faixa dinâmica citada acima.
     void validarDinheiro(float);
 public:
+    /// Get() retorna o valor armazenado (dinheiro).
+    /// Set() valida e atribui um novo valor (dinheiro), lançando exceção se inválido.
     float Get();
     void Set(float);
 

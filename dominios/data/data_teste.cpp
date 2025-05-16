@@ -9,10 +9,22 @@ const string DataSmokeTest::mes_excede_max_31_dias = "20231232";
 const string DataSmokeTest::mes_excede_max_30_dias = "20210631";
 const string DataSmokeTest::mes_excede_max_29_dias = "20240230";
 const string DataSmokeTest::mes_excede_max_28_dias = "19000229";
+const string DataSmokeTest::mesValido = "20021224";
 
 void DataSmokeTest::setUp(){
     this->state = true;
 }
+
+void DataSmokeTest::testmesValido(){
+    try{
+        this->data.Set(mesValido);
+    } catch (invalid_argument err){
+        return;  
+        this->state = false;
+        cout << "data invalida" << endl;
+    }
+}
+
 
 void DataSmokeTest::testFev1(){
     try{
@@ -93,6 +105,7 @@ void DataSmokeTest::testDataInvalidaForm(){
 bool DataSmokeTest::run(){
     DataSmokeTest testing = DataSmokeTest();
     testing.setUp();
+    testing.testmesValido();
     testing.testDataInvalidaForm();
     testing.testDataInvalidaTam();
     testing.testmesInvalido();

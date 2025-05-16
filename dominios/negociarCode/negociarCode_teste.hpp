@@ -3,6 +3,8 @@
 
 #include "negociarCode.hpp"
 
+
+/// Esta classe tem como propósito realizar diversos testes que vão detectar se todos os caracteres do código são alfanuméricos. Se não forem, uma excessão é lançada.
 class NegociarCodeTeste {
 private:
     const string CODIGO_VALIDO = "ABC123456789";
@@ -21,6 +23,7 @@ private:
     void testarCenarioFalha();
     
 public:
+    /// Este método executa uma série de testes para checar a validade do código de negociação.
     bool run();
 };
 
