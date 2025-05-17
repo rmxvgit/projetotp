@@ -1,6 +1,23 @@
 #include "password.hpp"
 
 using namespace std;
+
+/**
+ * @brief verifica a estabilidade e funcionalidade básica do dominio password em uma compilação 
+ *
+ * Os testes abrangem:
+ * - Senha válida.
+ * - Senha com comprimento inválido.
+ * - Senha com caracteres inválidos.
+ * - Senha com caracteres duplicados.
+ * - Senha sem números
+ * - Senha sem letras maiúsculas 
+ * - Senha sem letras minúsculas 
+ * - Senha sem caracteres especiais
+ *
+ * @throw invalid_argument
+ * 
+ */
 class PasswordSmokeTest {
     private:
 
@@ -30,5 +47,14 @@ class PasswordSmokeTest {
         void testNoSpecialCharPwd();
 
     public:
+    /**
+     * @brief Executa todos os testes de fumaça para o domínio Password.
+     *
+     * Inicializa o ambiente de teste, executa os testes e libera os recursos utilizados.
+     *
+     * @return 
+     * - true se todos os testes forem bem-sucedidos.
+     * - false caso contrário.
+     */
         bool run();
 };

@@ -16,7 +16,11 @@
 #include "perfil/perfil_teste.hpp"
 #include "Entidades/carteira_teste.hpp"
 #include "Entidades/ordem_teste.hpp"
+<<<<<<< HEAD
 #include "usrCode/usrCode_teste.hpp"
+=======
+#include "codigo/codigo_teste.hpp"
+>>>>>>> 2b1a501d3eb815bd43b964c916580fc5831c8fe4
 
 using namespace std;
 
@@ -32,7 +36,11 @@ int main(){
      OrdemTeste testOrdem;
      DinheiroSmokeTest testDinheiro;
      DataSmokeTest testData;
+<<<<<<< HEAD
      UsrCodeTeste testUsrCode;
+=======
+     CodigoSmokeTest testCode;
+>>>>>>> 2b1a501d3eb815bd43b964c916580fc5831c8fe4
 
 
 
@@ -48,6 +56,7 @@ int main(){
     if(testOrdem.run())           cout << "Success in the Ordem entity" << endl;
     if(testDinheiro.run()) cout << "Success in the Ordem entity" << endl;
     if(testUsrCode.run()) cout << "Succes in the UsrCode entity" << endl;
+    if(testCode.run())  cout << "Success in the code domain test" << endl;
 
     return 0;
 }
