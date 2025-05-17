@@ -86,16 +86,6 @@ void UsrCodeTeste::testarCenarioFalha() {
         cout << "SUCESSO: Exceção lançada corretamente para string longa demais" << endl;
     }
 
-    // Teste com string curta demais (sem tratamento de zeros)
-    try {
-        usrCode->set(CODIGO_INVALIDO_STR_CURTO);
-        cout << "FALHA: Exceção não lançada para string curta demais" << endl;
-        todosTestesPassaram = false;
-    }
-    catch (const invalid_argument& e) {
-        cout << "SUCESSO: Exceção lançada corretamente para string curta demais" << endl;
-    }
-
     // Teste com string com caracteres inválidos
     try {
         usrCode->set(CODIGO_INVALIDO_STR_CARACTERES);

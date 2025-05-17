@@ -64,7 +64,7 @@ string UsrCode::getStr() {
 }
 
 
-inline uint32_t UsrCode::getNum() {
+uint32_t UsrCode::getNum() {
     return code_number;
 }
 
@@ -86,7 +86,7 @@ void UsrCode::set(const uint32_t user_code) {
 }
 
 
-inline bool UsrCode::operator==(const UsrCode& other) {
+bool UsrCode::operator==(const UsrCode& other) {
     return other.code_number == code_number;
 }
 
@@ -102,6 +102,6 @@ bool UsrCode::operator==(const string& other) {
 }
 
 
-inline bool UsrCode::operator==(const int32_t other) {
+bool UsrCode::operator==(const int32_t other) {
     return other == code_number;
 }

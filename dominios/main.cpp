@@ -22,7 +22,6 @@
 using namespace std;
 
 int main(){
-
      NameSmokeTest testName;
      PasswordSmokeTest testPassword;
      AccountSmokeTest testAccount;
@@ -32,7 +31,6 @@ int main(){
      CarteiraTeste testCarteira;
      OrdemTeste testOrdem;
      DinheiroSmokeTest testDinheiro;
-     DataSmokeTest testData;
      UsrCodeTeste testUsrCode;
      CodigoSmokeTest testCode;
 
@@ -42,7 +40,7 @@ int main(){
     if(testPassword.run())  cout << "Success in the password domain test" << endl;
     if(testAccount.run())   cout << "Success in the account entity test" << endl;
     if(CpfSmokeTest::Run())       cout << "Success in the CPF domain test" << endl;
-    if(testData.run())      cout << "Success in the Data domain test" << endl;
+    if(DataSmokeTest::run())      cout << "Success in the Data domain test" << endl;
     if(testNegociarCode.run())    cout << "Success in the NegociarCode domain test" << endl;
     if(testQuantidade.run())      cout << "Success in the Quantidade domain test" << endl;
     if(testPerfil.run())          cout << "Success in the Perfil domain test" << endl;

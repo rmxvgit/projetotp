@@ -1,25 +1,19 @@
 #include "data_teste.hpp"
 #include <iostream>
 #include <stdexcept>
+#include <string>
 
-const string DataSmokeTest::formatoInvalido = "12/04/21rs";
-const string DataSmokeTest::tamInvalido = "1200920054";
-const string DataSmokeTest::mesErrado = "20255612";
-const string DataSmokeTest::mes_excede_max_31_dias = "20231232";
-const string DataSmokeTest::mes_excede_max_30_dias = "20210631";
-const string DataSmokeTest::mes_excede_max_29_dias = "20240230";
-const string DataSmokeTest::mes_excede_max_28_dias = "19000229";
-const string DataSmokeTest::mesValido = "20021224";
+using namespace std;
 
 void DataSmokeTest::setUp(){
     this->state = true;
 }
 
-void DataSmokeTest::testmesValido(){
+void DataSmokeTest::testeMesValido(){
     try{
         this->data.Set(mesValido);
     } catch (invalid_argument err){
-        return;  
+        return;
         this->state = false;
         cout << "data invalida" << endl;
     }
@@ -99,13 +93,12 @@ void DataSmokeTest::testDataInvalidaForm(){
     }
     cout << "formato invalido, use apenas caracteres numericos" << endl;
     this->state = false;
-
 }
 
 bool DataSmokeTest::run(){
     DataSmokeTest testing = DataSmokeTest();
     testing.setUp();
-    testing.testmesValido();
+    testing.testeMesValido();
     testing.testDataInvalidaForm();
     testing.testDataInvalidaTam();
     testing.testmesInvalido();

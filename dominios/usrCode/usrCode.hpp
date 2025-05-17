@@ -3,6 +3,8 @@
 
 using namespace std;
 
+
+/// essa classe não tem nenhum propósito no contexto do programa
 class UsrCode {
     private:
         // constants: ---------------------------------
