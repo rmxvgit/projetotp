@@ -16,6 +16,7 @@
 #include "perfil/perfil_teste.hpp"
 #include "Entidades/carteira_teste.hpp"
 #include "Entidades/ordem_teste.hpp"
+#include "codigo/codigo_teste.hpp"
 
 using namespace std;
 
@@ -31,6 +32,7 @@ int main(){
      OrdemTeste testOrdem;
      DinheiroSmokeTest testDinheiro;
      DataSmokeTest testData;
+     CodigoSmokeTest testCode;
 
 
 
@@ -45,6 +47,7 @@ int main(){
     if(testCarteira.run())        cout << "Success in the Carteira entity test" << endl;
     if(testOrdem.run())           cout << "Success in the Ordem entity" << endl;
     if(testDinheiro.run()) cout << "Success in the Ordem entity" << endl;
+    if(testCode.run())  cout << "Success in the code domain test" << endl;
 
     return 0;
 }
