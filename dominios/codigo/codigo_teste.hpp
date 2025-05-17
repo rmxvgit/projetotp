@@ -2,6 +2,20 @@
 
 using namespace std;
 
+
+/**
+ * @brief verifica a estabilidade e funcionalidade básica do dominio codigo em uma compilação 
+ *
+ * Os testes abrangem:
+ * - Codigo válido.
+ * - Codigo com comprimento maior que o permitido.
+ * - Código com comprimento menor que o permitido
+ * - Código com caracteres inválidos.
+ *
+ * Lan&ccedil;a exce&ccedil;&atilde;o caso o codigo informado seja inv&aacute;lido.
+ * @throw invalid_argument
+ * 
+ */
 class CodigoSmokeTest {
     private:
        const string validCode = "123456789";
@@ -21,5 +35,15 @@ class CodigoSmokeTest {
        void testInvalidCharacter();
 
     public:
+
+      /**
+     * @brief Executa todos os testes de fumaça para o domínio Name.
+     *
+     * Inicializa o ambiente de teste, executa os testes e libera os recursos utilizados.
+     *
+     * @return 
+     * - true se todos os testes forem bem-sucedidos.
+     * - false caso contrário.
+     */
        bool run();
 };
