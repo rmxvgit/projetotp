@@ -34,7 +34,7 @@ class NameSmokeTest {
 
     public:
 
-       /**
+      /**
      * @brief Executa todos os testes de fumaça para o domínio Name.
      *
      * Inicializa o ambiente de teste, executa os testes e libera os recursos utilizados.

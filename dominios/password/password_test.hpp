@@ -6,7 +6,7 @@ using namespace std;
  * @brief verifica a estabilidade e funcionalidade básica do dominio password em uma compilação 
  *
  * Os testes abrangem:
- * - Senha válido.
+ * - Senha válida.
  * - Senha com comprimento inválido.
  * - Senha com caracteres inválidos.
  * - Senha com caracteres duplicados.
