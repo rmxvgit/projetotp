@@ -36,11 +36,8 @@ int main(){
      OrdemTeste testOrdem;
      DinheiroSmokeTest testDinheiro;
      DataSmokeTest testData;
-<<<<<<< HEAD
      UsrCodeTeste testUsrCode;
-=======
      CodigoSmokeTest testCode;
->>>>>>> 2b1a501d3eb815bd43b964c916580fc5831c8fe4
 
 
 
