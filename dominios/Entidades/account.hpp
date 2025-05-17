@@ -13,8 +13,8 @@
  *
  * Regras de formato:
  * - O CPF deve estar em formato válido.
- * - O nome deve ser válido, conforme as regras do domínio Name.
- * - A senha deve ser válida, conforme as regras do domínio Password.
+ * - O nome deve ser válido
+ * - A senha deve ser válida
  */
 class Account{
     private :
@@ -59,7 +59,7 @@ class Account{
 
         /**
          * @brief Define o CPF da conta.
-         * @param cpf cpf (Objeto CPF já validado).
+         * @param cpf cpf (Objeto Cpf já validado).
          */
         void setCpf(const Cpf& cpf);
 

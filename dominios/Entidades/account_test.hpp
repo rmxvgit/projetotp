@@ -5,6 +5,16 @@
 
 using namespace std;
 
+    /**
+     * @brief verifica a estabilidade e funcionalidade básica da entidade account em uma compilação 
+     *
+     * Os testes abrangem:
+     * - Nome válido.
+     * - senha válida.
+     * - CPF válido.
+     * 
+     */
+    
 class AccountSmokeTest {
     private :
         const string nameValid = "Forrest Gump";
@@ -20,5 +30,14 @@ class AccountSmokeTest {
 
         public:
 
+    /**
+     * @brief Executa todos os testes de fumaça para a entidade Account.
+     *
+     * Inicializa o ambiente de teste, executa os testes e libera os recursos utilizados.
+     *
+     * @return 
+     * - true se todos os testes forem bem-sucedidos.
+     * - false caso contrário.
+     */
         bool run();
 };
