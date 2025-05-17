@@ -1,0 +1,27 @@
+var annotated_dup =
+[
+    [ "Account", "class_account.html", "class_account" ],
+    [ "AccountSmokeTest", "class_account_smoke_test.html", "class_account_smoke_test" ],
+    [ "Carteira", "class_carteira.html", "class_carteira" ],
+    [ "CarteiraTeste", "class_carteira_teste.html", "class_carteira_teste" ],
+    [ "Codigo", "class_codigo.html", "class_codigo" ],
+    [ "codigoNegocio", "classcodigo_negocio.html", "classcodigo_negocio" ],
+    [ "Cpf", "class_cpf.html", "class_cpf" ],
+    [ "CpfSmokeTest", "class_cpf_smoke_test.html", null ],
+    [ "Data", "class_data.html", "class_data" ],
+    [ "DataSmokeTest", "class_data_smoke_test.html", null ],
+    [ "Dinheiro", "class_dinheiro.html", "class_dinheiro" ],
+    [ "DinheiroSmokeTest", "class_dinheiro_smoke_test.html", null ],
+    [ "Name", "class_name.html", "class_name" ],
+    [ "NameSmokeTest", "class_name_smoke_test.html", "class_name_smoke_test" ],
+    [ "NegociarCodeTeste", "class_negociar_code_teste.html", "class_negociar_code_teste" ],
+    [ "Ordem", "class_ordem.html", "class_ordem" ],
+    [ "OrdemTeste", "class_ordem_teste.html", "class_ordem_teste" ],
+    [ "Password", "class_password.html", "class_password" ],
+    [ "PasswordSmokeTest", "class_password_smoke_test.html", "class_password_smoke_test" ],
+    [ "Perfil", "class_perfil.html", "class_perfil" ],
+    [ "PerfilTeste", "class_perfil_teste.html", "class_perfil_teste" ],
+    [ "Quantidade", "class_quantidade.html", "class_quantidade" ],
+    [ "QuantidadeTeste", "class_quantidade_teste.html", "class_quantidade_teste" ],
+    [ "UsrCode", "class_usr_code.html", "class_usr_code" ]
+];
