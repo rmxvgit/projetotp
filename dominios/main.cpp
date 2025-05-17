@@ -16,11 +16,8 @@
 #include "perfil/perfil_teste.hpp"
 #include "Entidades/carteira_teste.hpp"
 #include "Entidades/ordem_teste.hpp"
-<<<<<<< HEAD
 #include "usrCode/usrCode_teste.hpp"
-=======
 #include "codigo/codigo_teste.hpp"
->>>>>>> 2b1a501d3eb815bd43b964c916580fc5831c8fe4
 
 using namespace std;
 
