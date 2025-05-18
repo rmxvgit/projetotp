@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Técnincas de programação 01: Código-Fonte de name/name_test.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Técnincas de programação 01
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="dir_a4322c6783255bf3ab1ed5e56a70a30b.html">name</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">name_test.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;name.hpp&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span></div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classNameSmokeTest.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="classNameSmokeTest.html">NameSmokeTest</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>       <span class="keyword">const</span> <span class="keywordtype">string</span> validName = <span class="stringliteral">&quot;Eren Jaeger&quot;</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>       <span class="keyword">const</span> <span class="keywordtype">string</span> invalidLengthName = <span class="stringliteral">&quot;Roronoa Zoro no Ichibansenpai&quot;</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>       <span class="keyword">const</span> <span class="keywordtype">string</span> invalidCharacterName = <span class="stringliteral">&quot;Ichig@ Kurosak!&quot;</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>       <span class="keyword">const</span> <span class="keywordtype">string</span> invalidSpacingName = <span class="stringliteral">&quot;Tanjiro  Kamado&quot;</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>       <a class="code hl_class" href="className.html">Name</a> *nameInstance;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>       <span class="keywordtype">bool</span> testStatus;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>       <span class="keywordtype">void</span> setUp();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>       <span class="keywordtype">void</span> tearDown();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>       <span class="keywordtype">void</span> testValidName();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>       <span class="keywordtype">void</span> testInvalidLength();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>       <span class="keywordtype">void</span> testInvalidCharacter();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>       <span class="keywordtype">void</span> testInvalidSpacing();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>       <span class="keywordtype">bool</span> <a class="code hl_function" href="classNameSmokeTest.html#a3934ed4f8512cb733ad3fa42844ee7b8">run</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
+</div>
+<div class="ttc" id="aclassNameSmokeTest_html"><div class="ttname"><a href="classNameSmokeTest.html">NameSmokeTest</a></div><div class="ttdoc">verifica a estabilidade e funcionalidade básica do dominio nome em uma compilação</div><div class="ttdef"><b>Definição</b> name_test.hpp:17</div></div>
+<div class="ttc" id="aclassNameSmokeTest_html_a3934ed4f8512cb733ad3fa42844ee7b8"><div class="ttname"><a href="classNameSmokeTest.html#a3934ed4f8512cb733ad3fa42844ee7b8">NameSmokeTest::run</a></div><div class="ttdeci">bool run()</div><div class="ttdoc">Executa todos os testes de fumaça para o domínio Name.</div><div class="ttdef"><b>Definição</b> name_test.cpp:72</div></div>
+<div class="ttc" id="aclassName_html"><div class="ttname"><a href="className.html">Name</a></div><div class="ttdoc">Identificação única de um usuário em um determinado sistema, plataforma ou serviço online.</div><div class="ttdef"><b>Definição</b> name.hpp:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

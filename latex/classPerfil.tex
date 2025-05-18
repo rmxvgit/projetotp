@@ -1,0 +1,42 @@
+\doxysection{Perfil Class Reference}
+\hypertarget{classPerfil}{}\label{classPerfil}\index{Perfil@{Perfil}}
+
+
+{\ttfamily \#include $<$perfil.\+hpp$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classPerfil_a7aca2e50c675a887dba1173b88f17699}\label{classPerfil_a7aca2e50c675a887dba1173b88f17699} 
+enum class \mbox{\hyperlink{classPerfil_a7aca2e50c675a887dba1173b88f17699}{Tipo}} \{ {\bfseries CONSERVADOR}
+, {\bfseries MODERADO}
+, {\bfseries AGRESSIVO}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeração que define os tipos de perfil de investimento disponíveis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classPerfil_a7d33c31b4d676edb7d5e5ff2905ce0c0}\label{classPerfil_a7d33c31b4d676edb7d5e5ff2905ce0c0} 
+{\bfseries Perfil} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão que inicializa com perfil CONSERVADOR. \end{DoxyCompactList}\item 
+\Hypertarget{classPerfil_a606033e567fbd5f86a860cb1653f80f4}\label{classPerfil_a606033e567fbd5f86a860cb1653f80f4} 
+{\bfseries Perfil} (\mbox{\hyperlink{classPerfil_a7aca2e50c675a887dba1173b88f17699}{Tipo}} tipo)
+\begin{DoxyCompactList}\small\item\em Construtor que inicializa com um tipo específico de perfil. \end{DoxyCompactList}\item 
+\Hypertarget{classPerfil_a7ae44e55f668038481b1ee8ad180aa62}\label{classPerfil_a7ae44e55f668038481b1ee8ad180aa62} 
+\mbox{\hyperlink{classPerfil_a7aca2e50c675a887dba1173b88f17699}{Tipo}} {\bfseries Get} ()
+\begin{DoxyCompactList}\small\item\em Retorna o tipo de perfil atual. \end{DoxyCompactList}\item 
+\Hypertarget{classPerfil_aed78638ba888f7e45df99462e098891f}\label{classPerfil_aed78638ba888f7e45df99462e098891f} 
+void {\bfseries Set} (\mbox{\hyperlink{classPerfil_a7aca2e50c675a887dba1173b88f17699}{Tipo}} tipo)
+\begin{DoxyCompactList}\small\item\em Define um novo tipo de perfil. \end{DoxyCompactList}\item 
+\Hypertarget{classPerfil_a54bb2b05eef07a8057c36816ad20953f}\label{classPerfil_a54bb2b05eef07a8057c36816ad20953f} 
+std\+::string {\bfseries get\+Tipo\+String} ()
+\begin{DoxyCompactList}\small\item\em Retorna uma representação em string do perfil atual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe responsável por representar o perfil de investimento de um cliente. Oferece três tipos de perfil pré-\/definidos\+: CONSERVADOR, MODERADO e AGRESSIVO. Permite armazenar, recuperar e converter para string o perfil do investidor. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+perfil/perfil.\+hpp\item 
+perfil/perfil.\+cpp\end{DoxyCompactItemize}

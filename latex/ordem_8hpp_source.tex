@@ -1,0 +1,82 @@
+\doxysection{ordem.\+hpp}
+\hypertarget{ordem_8hpp_source}{}\label{ordem_8hpp_source}\index{Entidades/ordem.hpp@{Entidades/ordem.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}../dinheiro/dinheiro.hpp"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}../quantidade/quantidade.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}../codigo/codigo.hpp"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}../negociarCode/negociarCode.hpp"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}../data/data.hpp"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classOrdem_a80c3249420a9b8681243f863bbb30450}{Ordem}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{classCodigo}{Codigo}}\ \ \ \ \ \ \ \ codigo;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{classData}{Data}}\ \ \ \ \ \ \ \ \ \ data;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classQuantidade}{Quantidade}}\ \ \ \ quantidade;\ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{classcodigoNegocio}{codigoNegocio}}\ negociacao;\ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{classDinheiro}{Dinheiro}}\ \ \ \ \ \ preco;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{classOrdem_a80c3249420a9b8681243f863bbb30450}{Ordem}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{classOrdem_a0bf8cca4049b4f73b8a66dbd2b263675}{Ordem}}(\textcolor{keyword}{const}\ std::string\&\ codigo,\ \textcolor{keywordtype}{int}\ quantidade,\ \textcolor{keyword}{const}\ std::string\&\ tipoNegociacao,\ \textcolor{keywordtype}{float}\ preco,\ \textcolor{keyword}{const}\ std::string\&\ data);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classOrdem_a34ceab14b234742dff2bcc0fc4549c54}{setCodigo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classCodigo}{Codigo}}\&\ codigo);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classOrdem_a9676ce5222da95bfaee3fedc9f1b4e1d}{setCodigo}}(\textcolor{keyword}{const}\ std::string\&\ codigo);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classOrdem_a3f6899dc748592f319fb922a57f66656}{setQuantidade}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classQuantidade}{Quantidade}}\&\ quantidade);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classOrdem_a3f6899dc748592f319fb922a57f66656}{setQuantidade}}(\textcolor{keywordtype}{int}\ quantidade);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classOrdem_ab7cc988061df2fc8564c5b1b8366e17c}{setCodigoNegocio}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classcodigoNegocio}{codigoNegocio}}\&\ codNegocio);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classOrdem_ad082c6d944a39801d11d600803bed85c}{setCodigoNegocio}}(\textcolor{keyword}{const}\ std::string\&\ codNegocio);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classOrdem_ae18b1dcc9d4ca9c407b2ecf105dad94d}{setPreco}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDinheiro}{Dinheiro}}\&\ preco);}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classOrdem_ae18b1dcc9d4ca9c407b2ecf105dad94d}{setPreco}}(\textcolor{keywordtype}{float}\ preco);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classOrdem_a193853bf3ab4e02d7ece0f05e2c499b6}{SetData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classData}{Data}}\&\ data);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classOrdem_ab74a5118c672e00dea86d2cae410d2bd}{SetData}}(\textcolor{keyword}{const}\ std::string\&\ data);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classQuantidade}{Quantidade}}\&\ \mbox{\hyperlink{classOrdem_a09f59d3be0386b033da2e8edc25c2259}{getQuantidade}}();}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classCodigo}{Codigo}}\&\ \mbox{\hyperlink{classOrdem_ae08988f21cbf25bd3e5892c4a9dca359}{getCodigo}}();}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classcodigoNegocio}{codigoNegocio}}\&\ \mbox{\hyperlink{classOrdem_ac58ddb260bf5316b2e0a773e68829a57}{getNegociacao}}();}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classDinheiro}{Dinheiro}}\&\ \mbox{\hyperlink{classOrdem_af5880ab43dbe54cd7e34650585a1cc7a}{getPreco}}();}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classData}{Data}}\&\ \mbox{\hyperlink{classOrdem_ae38556bb0a9936f35959c6e7b299f471}{getData}}();}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00135\ \};}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \textcolor{comment}{//\ Implementações\ inline}}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classQuantidade}{Quantidade}}\&\ \mbox{\hyperlink{classOrdem_a09f59d3be0386b033da2e8edc25c2259}{Ordem::getQuantidade}}()\ \{}
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>quantidade;}
+\DoxyCodeLine{00141\ \}}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classCodigo}{Codigo}}\&\ \mbox{\hyperlink{classOrdem_ae08988f21cbf25bd3e5892c4a9dca359}{Ordem::getCodigo}}()\ \{}
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>codigo;}
+\DoxyCodeLine{00145\ \}}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classData}{Data}}\&\ \mbox{\hyperlink{classOrdem_ae38556bb0a9936f35959c6e7b299f471}{Ordem::getData}}()\ \{}
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>data;}
+\DoxyCodeLine{00149\ \}}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classcodigoNegocio}{codigoNegocio}}\&\ \mbox{\hyperlink{classOrdem_ac58ddb260bf5316b2e0a773e68829a57}{Ordem::getNegociacao}}()\ \{}
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>negociacao;}
+\DoxyCodeLine{00153\ \}}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classDinheiro}{Dinheiro}}\&\ \mbox{\hyperlink{classOrdem_af5880ab43dbe54cd7e34650585a1cc7a}{Ordem::getPreco}}()\ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>preco;}
+\DoxyCodeLine{00157\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,44 @@
+\doxysection{negociar\+Code.\+hpp}
+\hypertarget{negociarCode_8hpp_source}{}\label{negociarCode_8hpp_source}\index{negociarCode/negociarCode.hpp@{negociarCode/negociarCode.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NEGOCIARCODE\_HPP\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NEGOCIARCODE\_HPP\_INCLUDED}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcodigoNegocio}{codigoNegocio}}\{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ limite\ =\ 12;}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ codN;}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00015\ \ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ testeValidez(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&);\ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isNumeric(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\&\ c);}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isLetter(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\&\ c);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ Get();}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ Set(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ codigoNegocio::Get()\{}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordflow}{return}\ codN;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ codigoNegocio::Set(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ codn)\{}
+\DoxyCodeLine{00033\ \ \ \ \ testeValidez(codn);}
+\DoxyCodeLine{00034\ \ \ \ \ this-\/>codN\ =\ codn;}
+\DoxyCodeLine{00035\ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ NEGOCIARCODE\_HPP\_INCLUDED}}
+
+\end{DoxyCode}

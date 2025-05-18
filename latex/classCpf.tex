@@ -1,0 +1,54 @@
+\doxysection{Cpf Class Reference}
+\hypertarget{classCpf}{}\label{classCpf}\index{Cpf@{Cpf}}
+
+
+{\ttfamily \#include $<$cpf.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCpf_a581560b5c8c2f7bd3d509325b50c1e60}\label{classCpf_a581560b5c8c2f7bd3d509325b50c1e60} 
+{\bfseries Cpf} ()
+\begin{DoxyCompactList}\small\item\em Construtores\+: \end{DoxyCompactList}\item 
+\Hypertarget{classCpf_a3d2bf8d22f2fbd7537369679d800ebfe}\label{classCpf_a3d2bf8d22f2fbd7537369679d800ebfe} 
+{\bfseries Cpf} (const string \&cpf\+\_\+str)
+\item 
+\Hypertarget{classCpf_ac93b40cc233c17592d1c1baf671dc4f2}\label{classCpf_ac93b40cc233c17592d1c1baf671dc4f2} 
+{\bfseries Cpf} (const uint64\+\_\+t cpf\+\_\+num)
+\item 
+\Hypertarget{classCpf_a4e8348f046d762b34dbc9bd53f00f29d}\label{classCpf_a4e8348f046d762b34dbc9bd53f00f29d} 
+string {\bfseries Get} ()
+\begin{DoxyCompactList}\small\item\em Retorna o CPF formatado (xxx.\+xxx.\+xxx-\/xx) \end{DoxyCompactList}\item 
+\Hypertarget{classCpf_ac9c26f112d5d62ec3204d8582c67add7}\label{classCpf_ac9c26f112d5d62ec3204d8582c67add7} 
+uint64\+\_\+t {\bfseries Get\+Num} ()
+\begin{DoxyCompactList}\small\item\em Retorna o CPF como número inteiro. \end{DoxyCompactList}\item 
+\Hypertarget{classCpf_ae53ad15f9a5864e09bd974d340af7e31}\label{classCpf_ae53ad15f9a5864e09bd974d340af7e31} 
+void {\bfseries Set} (const string \&cpf\+\_\+str)
+\begin{DoxyCompactList}\small\item\em Atribui novo valor ao CPF (com validação) \end{DoxyCompactList}\item 
+\Hypertarget{classCpf_acdc39480e64ad4ccbd535b51d6f4ea9e}\label{classCpf_acdc39480e64ad4ccbd535b51d6f4ea9e} 
+void {\bfseries Set} (const uint64\+\_\+t cpf\+\_\+num)
+\item 
+\Hypertarget{classCpf_ae394edf9869f648a7790ff1318f7046a}\label{classCpf_ae394edf9869f648a7790ff1318f7046a} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classCpf}{Cpf}} \&other)
+\begin{DoxyCompactList}\small\item\em Operadores de comparação. \end{DoxyCompactList}\item 
+\Hypertarget{classCpf_acc83952ee280385890c98ab8090c4a71}\label{classCpf_acc83952ee280385890c98ab8090c4a71} 
+bool {\bfseries operator==} (const string \&other)
+\item 
+\Hypertarget{classCpf_a779cdd5c7f098634475ef39e9f463966}\label{classCpf_a779cdd5c7f098634475ef39e9f463966} 
+bool {\bfseries operator==} (const uint64\+\_\+t other)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCpf_a869a7c7829dcd52793817ea337e4f91a}\label{classCpf_a869a7c7829dcd52793817ea337e4f91a} 
+static const int {\bfseries CPF\+\_\+\+NUM\+\_\+\+DIGITS} = 11
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe responsável por armazenar e gerenciar um número de CPF válido. O CPF é armazenado como string contendo apenas dígitos (11 caracteres). Realiza validação automática ao atribuir novos valores. Lança exceção em caso de CPF inválido. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpf/cpf.\+hpp\item 
+cpf/cpf.\+cpp\end{DoxyCompactItemize}
