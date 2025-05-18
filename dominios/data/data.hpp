@@ -17,8 +17,9 @@ class Data{
         void validarData(string);
 
     public:
-        /// Get() retorna o valor armazenado.
         /// Set() valida e atribui um novo valor, lançando exceção se inválido.  
         void Set(string);
+
+        /// Get() retorna o valor armazenado.
         string Get();
 };

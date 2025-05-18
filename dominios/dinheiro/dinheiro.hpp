@@ -10,8 +10,9 @@ private:
     void validarDinheiro(float);
 public:
     /// Get() retorna o valor armazenado (dinheiro).
-    /// Set() valida e atribui um novo valor (dinheiro), lançando exceção se inválido.
     float Get();
+    
+    /// Set() valida e atribui um novo valor (dinheiro), lançando exceção se inválido.
     void Set(float);
 
 

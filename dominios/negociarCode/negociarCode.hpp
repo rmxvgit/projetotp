@@ -20,6 +20,7 @@ class codigoNegocio{
     public:
             /// Get() retorna o valor armazenado.
             string Get();
+            
             /// Set() valida e atribui um novo valor, lançando exceção se inválido.  
             void Set(const string&);
 

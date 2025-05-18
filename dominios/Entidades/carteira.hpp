@@ -13,16 +13,22 @@ class Carteira{
         Perfil perfil;
 
     public:
-        /// Get() retorna o valor armazenado.
         /// Set() valida e atribui um novo valor, lançando exceção se inválido.
-         
         void setCodigo(const Codigo&);
+        
+        /// Get() retorna o valor armazenado.
         Codigo getCodigo();
-
+        
+        /// Set() valida e atribui um novo valor, lançando exceção se inválido.
         void setName(const Name&);
+
+        /// Get() retorna o valor armazenado.
         Name getName();
         
+        /// Set() valida e atribui um novo valor, lançando exceção se inválido.
         void setPerfil(const Perfil& perfil);
+
+        /// Get() retorna o valor armazenado.
         Perfil getPerfil()const;
 
 
