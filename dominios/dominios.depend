@@ -1,8 +1,24 @@
 # depslib dependency file v1.0
-1744122295 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/main.cpp
+1747570160 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/main.cpp
 	<iostream>
-	<ostream>
-	"cpf.hpp"
+	"Entidades/account.hpp"
+	"Entidades/ordem.hpp"
+	"Entidades/carteira.hpp"
+	"dinheiro/dinheiro.hpp"
+	"negociarCode/negociarCode.hpp"
+	"cpf/cpf_teste.hpp"
+	"name/name_test.hpp"
+	"password/password_test.hpp"
+	"quantidade/quantidade.hpp"
+	"Entidades/account_test.hpp"
+	"data/data_teste.hpp"
+	"dinheiro/dinheiro_teste.hpp"
+	"negociarCode/negociarCode_teste.hpp"
+	"quantidade/quantidade_teste.hpp"
+	"perfil/perfil_teste.hpp"
+	"Entidades/carteira_teste.hpp"
+	"Entidades/ordem_teste.hpp"
+	"codigo/codigo_teste.hpp"
 
 1744126879 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/cpf.hpp
 	<cstdint>
@@ -415,4 +431,208 @@
 
 1747491408 c:\users\rodri\onedrive\desktop\estudos\programação\c++\tp\projetotp\dominios\codigo\codigo_teste.hpp
 	"codigo.hpp"
+
+1745934898 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/codigo/codigo.cpp
+	<stdexcept>
+	"codigo.hpp"
+
+1747436728 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/codigo/codigo.hpp
+	<string>
+
+1747522840 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/codigo/codigo_teste.cpp
+	<stdexcept>
+	<iostream>
+	"codigo_teste.hpp"
+
+1747522840 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/codigo/codigo_teste.hpp
+	"codigo.hpp"
+
+1746111956 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/cpf/cpf.cpp
+	"cpf.hpp"
+	<cstdint>
+	<cstdio>
+	<iostream>
+	<sstream>
+	<stdexcept>
+	<string>
+
+1747436057 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/cpf/cpf.hpp
+	<cstdint>
+	<string>
+
+1747146209 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/cpf/cpf_teste.cpp
+	"cpf_teste.hpp"
+	<iostream>
+	<stdexcept>
+
+1747436243 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/cpf/cpf_teste.hpp
+	"string"
+	"cpf.hpp"
+
+1746377265 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/data/data.cpp
+	"data.hpp"
+	<stdexcept>
+	<string>
+
+1747569935 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/data/data.hpp
+	<string>
+
+1746377396 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/dinheiro/dinheiro.cpp
+	"dinheiro.hpp"
+	<stdexcept>
+
+1747569935 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/dinheiro/dinheiro.hpp
+
+1747435733 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/dinheiro/dinheiro_teste.cpp
+	"dinheiro_teste.hpp"
+	<stdexcept>
+	<iostream>
+
+1747435733 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/dinheiro/dinheiro_teste.hpp
+	"dinheiro.hpp"
+
+1747345885 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/Entidades/account.cpp
+	"account.hpp"
+
+1747522840 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/Entidades/account.hpp
+	"../cpf/cpf.hpp"
+	"../name/name.hpp"
+	"../password/password.hpp"
+
+1747522840 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/name/name.hpp
+	<string>
+
+1747522840 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/password/password.hpp
+	<string>
+
+1747345885 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/Entidades/account_test.cpp
+	"account_test.hpp"
+
+1747522840 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/Entidades/account_test.hpp
+	"account.hpp"
+	"../name/name.hpp"
+	"../password/password.hpp"
+	<iostream>
+
+1746109780 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/Entidades/carteira.cpp
+	"carteira.hpp"
+
+1747569935 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/Entidades/carteira.hpp
+	"../codigo/codigo.hpp"
+	"../name/name.hpp"
+	"../perfil/perfil.hpp"
+
+1747436373 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/perfil/perfil.hpp
+	<string>
+
+1747350763 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/Entidades/carteira_teste.cpp
+	"carteira_teste.hpp"
+	<iostream>
+
+1747435733 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/Entidades/carteira_teste.hpp
+	"carteira.hpp"
+	"../codigo/codigo.hpp"
+	"../name/name.hpp"
+	"../perfil/perfil.hpp"
+
+1746538219 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/Entidades/ordem.cpp
+	"ordem.hpp"
+	<string>
+
+1747522840 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/Entidades/ordem.hpp
+	"../dinheiro/dinheiro.hpp"
+	"../quantidade/quantidade.hpp"
+	"../codigo/codigo.hpp"
+	"../negociarCode/negociarCode.hpp"
+	"../data/data.hpp"
+
+1747436847 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/quantidade/quantidade.hpp
+
+1747569935 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/negociarCode/negociarCode.hpp
+	<string>
+
+1747353125 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/Entidades/ordem_teste.cpp
+	"ordem_teste.hpp"
+	<iostream>
+
+1747522840 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/Entidades/ordem_teste.hpp
+	"ordem.hpp"
+	"../codigo/codigo.hpp"
+	"../data/data.hpp"
+	"../quantidade/quantidade.hpp"
+	"../negociarCode/negociarCode.hpp"
+	"../dinheiro/dinheiro.hpp"
+
+1747345885 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/name/name.cpp
+	"name.hpp"
+	<stdexcept>
+
+1747345885 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/name/name_test.cpp
+	<stdexcept>
+	<iostream>
+	"name_test.hpp"
+
+1747522840 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/name/name_test.hpp
+	"name.hpp"
+
+1746540232 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/negociarCode/negociarCode.cpp
+	<string>
+	"negociarCode.hpp"
+	<stdexcept>
+
+1747349921 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/negociarCode/negociarCode_teste.cpp
+	"negociarCode_teste.hpp"
+	<iostream>
+	<stdexcept>
+
+1747435733 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/negociarCode/negociarCode_teste.hpp
+	"negociarCode.hpp"
+
+1747345885 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/password/password.cpp
+	"password.hpp"
+	<stdexcept>
+	<string>
+	<regex>
+	<set>
+	<cctype>
+
+1747345885 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/password/password_test.cpp
+	"password_test.hpp"
+	<stdexcept>
+	<iostream>
+
+1747522840 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/password/password_test.hpp
+	"password.hpp"
+
+1746112110 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/perfil/perfil.cpp
+	"perfil.hpp"
+
+1747350743 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/perfil/perfil_teste.cpp
+	"perfil_teste.hpp"
+	<iostream>
+
+1747436441 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/perfil/perfil_teste.hpp
+	"perfil.hpp"
+
+1746377459 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/quantidade/quantidade.cpp
+	"quantidade.hpp"
+	<stdexcept>
+
+1747350422 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/quantidade/quantidade_teste.cpp
+	"quantidade_teste.hpp"
+	<iostream>
+	<stdexcept>
+
+1747437188 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/quantidade/quantidade_teste.hpp
+	"quantidade.hpp"
+
+1747525713 source:/home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/data/data_teste.cpp
+	"data_teste.hpp"
+	<iostream>
+	<stdexcept>
+	<string>
+
+1747525699 /home/rafa/tudo/materias/tp1/cpp/projetotp/dominios/data/data_teste.hpp
+	<string>
+	"data.hpp"
 

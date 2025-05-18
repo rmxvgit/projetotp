@@ -81,8 +81,6 @@
 		<Unit filename="quantidade/quantidade.hpp" />
 		<Unit filename="quantidade/quantidade_teste.cpp" />
 		<Unit filename="quantidade/quantidade_teste.hpp" />
-		<Unit filename="usrCode/usrCode.cpp" />
-		<Unit filename="usrCode/usrCode.hpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
