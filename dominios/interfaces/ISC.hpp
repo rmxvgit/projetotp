@@ -26,7 +26,7 @@ class ISAccount {
     /**
      * @brief Solicita a leitura dos dados de uma conta existente.
      * 
-     * @param account Ponteiro para um objeto Account onde os dados lidos serão armazenados.
+     * @param Account Ponteiro para onde os dados lidos serão armazenados.
      * @return 
      * -true se a conta for encontrada e os dados forem carregados
      * -false caso contrário.
@@ -36,22 +36,22 @@ class ISAccount {
     /**
      * @brief Solicita a edição dos dados de uma conta existente.
      * 
-     * @param account Objeto Account contendo os dados atualizados da conta.
+     * @param Account contem os dados da conta que serão atualizados.
      * @return 
      * -true se a conta for editada com sucesso
-     * - false caso contrário.
+     * -false caso contrário.
      */
-    virtual bool edit(const Account& account) = 0;
+    virtual bool edit(const Account& ) = 0;
 
     /**
      * @brief Solicita a exclusão de uma conta.
      * 
-     * @param cpf Objeto Cpf identificando a conta a ser excluída.
+     * @param Cpf identifica a conta a ser excluída.
      * @return 
      * -true se a conta for excluída com sucesso
      * -false caso contrário.
      */
-    virtual bool remove(const Cpf& cpf) = 0;
+    virtual bool remove(const Cpf& ) = 0;
 };
 #endif // ISACCOUNT_HPP
 
