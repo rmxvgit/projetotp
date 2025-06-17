@@ -1,3 +1,6 @@
+#ifndef IAACCOUNT_HPP
+#define IAACCOUNT_HPP
+
 #include <iostream>
 #include "../Entidades/account.hpp"
 
@@ -5,13 +8,13 @@ using namespace std;
 
 /**
  * @brief Interface apresentação-conta
- * Permite que o usuário tenha acesso a recursos específicos da entidade conta
+ * Permite que o usuário tenha acesso a recursos específicos do sistema
  */
 class IAAccount {
 public:
     /**
-     * @brief Método responsável por criar uma conta
-     * @param Account
+     * @brief Cria uma nova conta através da interação com o usuário
+     *
      */
     virtual void create() = 0;
 
@@ -26,3 +29,5 @@ public:
      */
     virtual ~IAAccount() {};
 };
+
+#endif // IAACCOUNT_HPP
