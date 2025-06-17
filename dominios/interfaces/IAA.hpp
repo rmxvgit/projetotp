@@ -1,3 +1,4 @@
+#pragma once
 #include "../cpf/cpf.hpp"
 /***
  *  @brief Interface aprensetação-autenticação(IAA)
