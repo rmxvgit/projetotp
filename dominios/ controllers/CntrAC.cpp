@@ -1,6 +1,8 @@
-#include "CntrAC.hpp"
+
 #include "../ command/CommAccount.hpp"
+#include "../controllers/Cntr.hpp"
 #include <iostream>
+#include <stdexcept>
 
 
 void CntrIAAccount :: create(){
@@ -43,7 +45,7 @@ void CntrIAAccount :: create(){
 
 };
 
-void CntrIAAccount :: run(const Cpf& cpf){
+void CntrIAAccount :: execute(const Cpf& cpf){
 
     CommAccount commamd;
 
@@ -63,19 +65,19 @@ void CntrIAAccount :: run(const Cpf& cpf){
 
         switch(option){
             case CREATE : commamd = new CommAccountCreate();
-            commamd->run(cntrISAccount);
+            commamd->execute(cntrISAccount);
             delete commamd;
             break;
             case READ : commamd = new CommAccountRead();
-            commamd->run(cntrISAccount);
+            commamd->execute(cntrISAccount);
             delete commamd;
             break;
             case UPDATE: commamd = new CommAccountUpdate();
-            commamd->run(cntrISAccount);
+            commamd->execute(cntrISAccount);
             delete commamd;
             break;
             case REMOVE : commamd = new CommAccountRemove();
-            commamd->run(cntrISAccount);
+            commamd->execute(cntrISAccount);
             delete commamd;
             break;
         }

@@ -4,27 +4,27 @@
 
 class CommAccount {
     public :
-        virtual void run(ISAccount *);
+        virtual void execute(ISAccount *);
         virtual ~CommAccount(){};
 };
 
 class CommAccountCreate : public CommAccount {
     public :
-        void run(ISAccount *);
+        void execute(ISAccount *);
 };
 
 class CommAccountRead : public CommAccount {
     public :
-        void run(ISAccount *);
+        void execute(ISAccount *);
 };
 
 class CommAccountUpdate : public CommAccount {
     public :
-        void run(ISAccount *);
+        void execute(ISAccount *);
 };
 
 class CommAccountRemove : public CommAccount {
     public :
-        void run(ISAccount *);
+        void execute(ISAccount *);
 };
 

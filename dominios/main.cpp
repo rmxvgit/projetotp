@@ -17,10 +17,16 @@
 #include "Entidades/carteira_teste.hpp"
 #include "Entidades/ordem_teste.hpp"
 #include "codigo/codigo_teste.hpp"
+#include "../command/CommAccount.hpp"
+#include "../controllers/CntrAC.hpp"
+#include "../stubs/stubSC.hpp"
+#include "../interfaces/IAC.hpp"
+#include "../interfaces/ISC.hpp"
 
 using namespace std;
 
 int main(){
+
      NameSmokeTest testName;
      PasswordSmokeTest testPassword;
      AccountSmokeTest testAccount;
@@ -31,6 +37,13 @@ int main(){
      OrdemTeste testOrdem;
      DinheiroSmokeTest testDinheiro;
      CodigoSmokeTest testCode;
+
+     //Declaracao de ponteiros para instanciar controladoras do módulo interface aprensentacao conta
+     IAAccount *cntrIAAccount;
+
+     //Declaracao de ponteiro para instanciar stubs do modulo stubs conta 
+     ISAccount *stubISAccount;
+
 
 
 
@@ -47,5 +60,32 @@ int main(){
     if(testDinheiro.run()) cout << "Success in the Ordem entity" << endl;
     if(testCode.run())  cout << "Success in the code domain test" << endl;
 
+    //=======================================Parte 02=====================================================//
+
+    cntrIAAccount = new IAAccount();
+    stubISAccount = new StubISAccount();
+
+    // Estabelecer relacionamentos entre inst�ncias de controladoras e inst�ncias de stubs.
+    cntrIAAccount->setCntrAccount(stubISAccount); 
+    
+    bool result;
+
+    Cpf cpf;
+
+
+        cout << endl << "Tela inicial do sistema" << endl;
+
+        try {
+            
+            cntrIAAccount->execute(&cpf);
+
+        }
+        catch (runtime_error &exp){
+            cout << "Wrong in function execute cpf" << endl;
+        }
+    
+        delete cntrIAAccount;
+        delete stubISAccount;
+        
     return 0;
 }

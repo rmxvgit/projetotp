@@ -20,7 +20,7 @@ class CntrIAAccount : public IAAccount {
     public :
 
         void create();
-        void run(const Cpf&) ;
+        void execute(const Cpf&) ;
 
         void setCntrISAccount(ISAccount *);
 

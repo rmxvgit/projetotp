@@ -1,7 +1,8 @@
 #include "CommAccount.hpp"
 #include <iostream>
+#include <stdexcept>
 
-void CommAccountCreate ::run(ISAccount *cntrIAAccount){
+void CommAccountCreate ::execute(ISAccount *cntrIAAccount){
 
     bool result;
     Account account;
@@ -48,7 +49,7 @@ void CommAccountCreate ::run(ISAccount *cntrIAAccount){
 
 } 
 
-void CommAccountRead ::run(ISAccount *cntrIAAccount){
+void CommAccountRead ::execute(ISAccount *cntrIAAccount){
 
     bool result;
     Account account;
@@ -72,7 +73,7 @@ void CommAccountRead ::run(ISAccount *cntrIAAccount){
         }
     }
 
-     result = cntrIAAccount->read(account);
+     result = cntrIAAccount->read(&account);
 
      if(result) {
 
@@ -87,7 +88,7 @@ void CommAccountRead ::run(ISAccount *cntrIAAccount){
 
 
 
-void CommAccountUpdate ::run(ISAccount *cntrIAAccount){
+void CommAccountUpdate ::execute(ISAccount *cntrIAAccount){
 
     bool result;
     Account account;
@@ -122,7 +123,7 @@ void CommAccountUpdate ::run(ISAccount *cntrIAAccount){
 
 } 
 
-void CommAccountRemove::run(ISAccount *cntrIAAccount){
+void CommAccountRemove::execute(ISAccount *cntrIAAccount){
 
     bool result;
     Cpf cpf;
