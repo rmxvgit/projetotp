@@ -17,7 +17,7 @@
 #include "Entidades/carteira_teste.hpp"
 #include "Entidades/ordem_teste.hpp"
 #include "codigo/codigo_teste.hpp"
-#include "../command/CommAccount.hpp"
+#include "../commamd/CommAccount.hpp"
 #include "../controllers/CntrAC.hpp"
 #include "../stubs/stubSC.hpp"
 #include "../interfaces/IAC.hpp"
@@ -86,6 +86,6 @@ int main(){
     
         delete cntrIAAccount;
         delete stubISAccount;
-        
+
     return 0;
 }

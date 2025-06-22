@@ -1,6 +1,6 @@
-
+#pragma once
 #include <iostream>
-#include "../ controllers/CntrAC.hpp"   
+#include "../controllers/CntrAC.hpp"   
 
 class CommAccount {
     public :

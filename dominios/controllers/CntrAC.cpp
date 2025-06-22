@@ -1,6 +1,6 @@
 
 #include "../ command/CommAccount.hpp"
-#include "../controllers/Cntr.hpp"
+#include "CntrAC.hpp"
 #include <iostream>
 #include <stdexcept>
 
@@ -47,7 +47,7 @@ void CntrIAAccount :: create(){
 
 void CntrIAAccount :: execute(const Cpf& cpf){
 
-    CommAccount commamd;
+    CommAccount* commamd = nullptr;
 
     int option;
 
@@ -64,22 +64,26 @@ void CntrIAAccount :: execute(const Cpf& cpf){
         cin >> option;
 
         switch(option){
-            case CREATE : commamd = new CommAccountCreate();
-            commamd->execute(cntrISAccount);
-            delete commamd;
-            break;
-            case READ : commamd = new CommAccountRead();
-            commamd->execute(cntrISAccount);
-            delete commamd;
-            break;
-            case UPDATE: commamd = new CommAccountUpdate();
-            commamd->execute(cntrISAccount);
-            delete commamd;
-            break;
-            case REMOVE : commamd = new CommAccountRemove();
-            commamd->execute(cntrISAccount);
-            delete commamd;
-            break;
+            case CREATE:
+                commamd = new CommAccountCreate();
+                commamd->execute(cntrISAccount);
+                delete commamd;
+                break;
+            case READ:
+                commamd = new CommAccountRead();
+                commamd->execute(cntrISAccount);
+                delete commamd;
+                break;
+            case UPDATE:
+                commamd = new CommAccountUpdate();
+                commamd->execute(cntrISAccount);
+                delete commamd;
+                break;
+            case REMOVE:
+                commamd = new CommAccountRemove();
+                commamd->execute(cntrISAccount);
+                delete commamd;
+                break;
         }
         if(option == RETURN){
             break;

@@ -1,4 +1,5 @@
 
+#pragma once
 #include "../interfaces/IAC.hpp"
 #include "../interfaces/ISA.hpp"
 #include "../Entidades/account.hpp"

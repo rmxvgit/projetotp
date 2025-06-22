@@ -1,4 +1,6 @@
 #include <iostream>
+#include "../interfaces/IAC.hpp"
+#include "../interfaces/ISA.hpp"
 #include "../stubs/stubSC.hpp"
 
 bool StubISAccount::create(Account &account) {
@@ -6,7 +8,7 @@ bool StubISAccount::create(Account &account) {
 
     bool result = true;
 
-    switch (account.getName().Get()) {
+    switch (account.getCpf().GetNum()) {
         case TRIGGER_FALHA:
             result = false;
             break;
@@ -25,7 +27,7 @@ bool ISAccount::read(Account* account) {
 
     bool result = true;
 
-    switch (account->getName().Get()) {
+    switch (account->getCpf().GetNum()) {
         case TRIGGER_FALHA:
             result = false;
             break;
@@ -44,7 +46,7 @@ bool ISAccount::edit(const Account& account) {
 
     bool result = true;
 
-    switch (account.getName().Get()) {
+    switch (account.getCpf().GetNum()) {
         case TRIGGER_FALHA:
             result = false;
             break;
@@ -63,7 +65,7 @@ bool ISAccount::remove(const Cpf& cpf) {
 
     bool result = true;
 
-     switch (account.getName().Get()) {
+     switch (cpf.GetNum()) {
         case TRIGGER_FALHA:
             result = false;
             break;
