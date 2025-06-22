@@ -13,6 +13,7 @@ using namespace std;
  * para manipulação de contas no sistema.
  */
 class ISAccount {
+    public:
      /**
      * @brief Solicita a criação de uma nova conta.
      * 
@@ -41,7 +42,7 @@ class ISAccount {
      * -true se a conta for editada com sucesso
      * -false caso contrário.
      */
-    virtual bool edit(const Account& ) = 0;
+    virtual bool update(const Account& ) = 0;
 
     /**
      * @brief Solicita a exclusão de uma conta.
