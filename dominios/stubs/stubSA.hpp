@@ -2,13 +2,14 @@
 
 #include "../interfaces/IAA.hpp"
 #include "../cpf/cpf.hpp"
+#include "../password/password.hpp"
 
 #include <stdexcept>
 #include <iostream>
 #include <typeinfo>
 
 using namespace std;
-class StubSA:public IAA{
+class StubSA:public ISA{
 
 private:
 
@@ -16,6 +17,5 @@ private:
     const static int TRIGGER_ERRO_SISTEMA = 78901;
 
 public:
-
-    bool autenticar(Cpf&);
+    bool autenticar(Cpf&, Password&);
 };  

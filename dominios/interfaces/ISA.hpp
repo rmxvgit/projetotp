@@ -13,7 +13,7 @@ class ISA{
      * @param Password domínio de uma senha
      * @returns bool caso autenticado ou não
      */
-        virtual bool autenticate(Cpf, Password)  =  0; 
+        virtual bool autenticate(const Cpf&, const Password&)  =  0; 
 
         /***
          * @brief Destrutor padrão
