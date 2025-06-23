@@ -3,9 +3,12 @@
 
 #include <iostream>
 #include "../Entidades/account.hpp"
-#include "../interfaces/ISC.hpp"
+
+
 
 using namespace std;
+
+class ISAccount;
 
 /**
  * @brief Interface apresentação-conta
