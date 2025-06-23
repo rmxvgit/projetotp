@@ -68,7 +68,7 @@ Cpf::Cpf(const uint64_t cpf_num) {
 }
 
 // Equivalente a um get
-string Cpf::Get() {
+string Cpf::Get() const {
     string show_cpf = this->cpf;
     string::iterator begining = show_cpf.begin();
     show_cpf.insert(begining + 9, '-');
@@ -77,7 +77,7 @@ string Cpf::Get() {
     return show_cpf;
 }
 
-uint64_t Cpf::GetNum() {
+uint64_t Cpf::GetNum() const  {
     uint64_t cpf_num;
     stringstream cpf_stream = stringstream(this->cpf);
     cpf_stream >> cpf_num;

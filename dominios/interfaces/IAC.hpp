@@ -4,7 +4,11 @@
 #include <iostream>
 #include "../Entidades/account.hpp"
 
+
+
 using namespace std;
+
+class ISAccount;
 
 /**
  * @brief Interface apresentação-conta
@@ -19,8 +23,8 @@ public:
     virtual void create() = 0;
 
     /**
-     * @brief Método por meio do qual é solicitado o serviço
-     * @param Cpf Ponteiro para um cpf
+     * @brief Solicita e executa operações relacionadas à conta para o CPF informado.
+     * @param Cpf Ponteiro para um objeto que identifica o usuário.
      */
     virtual void execute(Cpf*) = 0;
 
@@ -28,6 +32,12 @@ public:
      * @brief Método destrutor virtual
      */
     virtual ~IAAccount() {};
+
+    /**
+     * @brief Estabelece a ligação com a controladora de serviço de conta.
+     * @param ISAccount Ponteiro para a interface de serviço de conta.
+     */
+    virtual void setCntrAccount(ISAccount *);
 };
 
 #endif // IAACCOUNT_HPP

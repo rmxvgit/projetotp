@@ -26,10 +26,10 @@ class Cpf {
         Cpf(const uint64_t cpf_num);
 
         /// Retorna o CPF formatado (xxx.xxx.xxx-xx)
-        string Get();
+        string Get() const ;
 
         /// Retorna o CPF como número inteiro
-        uint64_t GetNum();
+        uint64_t GetNum() const  ;
 
         /// Atribui novo valor ao CPF (com validação)
         void Set(const string& cpf_str);
