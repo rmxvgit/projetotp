@@ -12,6 +12,6 @@ class StubISAccount : public ISAccount {
      bool create(const Account&) ;
      bool read(Account*) ;
      bool update(const Account&) ;
-     bool remove(const Cpf&) 
+     bool remove(const Cpf&) ;
 };
 
