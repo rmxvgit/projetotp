@@ -7,7 +7,7 @@
 bool StubISAccount::create(const Account& account) {
     std::cout << "StubISAccount :: create" << std::endl;
     bool result = true;
-    switch (account.getCpf().GetNum()) {
+    switch ( account.getCpf().GetNum()) {
         case TRIGGER_FALHA:
             result = false;
             break;
@@ -23,7 +23,7 @@ bool StubISAccount::create(const Account& account) {
 bool StubISAccount::read(Account* account) {
     std::cout << "StubISAccount :: read" << std::endl;
     bool result = true;
-    switch (account->getCpf().GetNum()) {
+    switch (const account->getCpf().GetNum()) {
         case TRIGGER_FALHA:
             result = false;
             break;
