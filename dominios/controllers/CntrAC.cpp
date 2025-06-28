@@ -61,7 +61,7 @@ void CntrIAAccount :: create(){
         result = false;
 };
 
-void CntrIAAccount :: execute(const Cpf& cpf){
+void CntrIAAccount :: execute( Cpf& cpf){
 
     CommAccount* commamd ;
 

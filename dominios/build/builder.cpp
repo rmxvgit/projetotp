@@ -6,8 +6,8 @@ CntrControler *SystemBuilder::create(){
     cntrAAutenticacao = new CntrAAutenticacao();
     cntrIAAccount = new CntrIAAccount();
 
-    cntrISAutenticacao = new CntrAAutenticacao();
-    cntrISAccount = new cntrISAccount();
+    cntrISAutenticacao = new StubSA();
+    cntrISAccount = new StubISAccount();
 
     cntrControler->setCntrIAAutenticacao(cntrAAutenticacao);
     cntrControler->setCntrIAAccount(cntrIAAccount);

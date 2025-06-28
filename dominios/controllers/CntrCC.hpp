@@ -1,3 +1,4 @@
+#pragma once
 #include "../controllers/CntrAA.hpp"
 #include "../controllers/CntrAC.hpp"
 #include "../controllers/CntrAI.hpp"

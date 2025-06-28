@@ -22,13 +22,13 @@ class CntrIAAccount : public IAAccount {
     public :
 
         void create();
-        void execute(const Cpf&) ;
-        void setCntrISAccount(ISAccount *);
+        void execute(Cpf&) ;
+        void setCntrAccount(ISAccount *);
 
 
 };
 
-inline void CntrIAAccount :: setCntrISAccount(ISAccount *cntrISAccount){
-    this->cntrISAccount = cntrISAccount;
+inline void CntrIAAccount :: setCntrAccount(ISAccount *cntrAccount){
+    this->cntrISAccount = cntrAccount;
 };
 
