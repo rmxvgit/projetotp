@@ -13,12 +13,12 @@ class CntrControler {
      IAAccount *cntrIAAccount;
     public :
         void execute();
-        void setCntrIAA(IAA*);
-        void serCntrIAAccount(IAAccount*);
+        void setCntrIAAutenticacao(IAA*);
+        void setCntrIAAccount(IAAccount*);
         
 };
 
-inline void  CntrControler :: setCntrIAA(IAA *cntr){
+inline void  CntrControler :: setCntrIAAutenticacao(IAA *cntr){
     this->cntrAAutenticacao = cntr;
 }
 

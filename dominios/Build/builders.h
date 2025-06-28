@@ -8,11 +8,15 @@
 #include "../controllers/CntrCC.hpp"
 #include "../command/CommAccount.hpp"
 
-class BuilderSistem {
-    private :
-        CntrIAAccount *cntrIAAccount;
-        IAAccount *cntIACcount;
-        ISAccount *cntrISaccount;
+class SystemBuilder {
+    private:
+        CntrControler *cntrControler;
+        IAA *cntrAAutenticacao;
+        IAAccount *cntrIAAccount;
+
+        ISA *cntrISAutenticacao;
+        ISAccount *cntrISAccount;
     public:
-        CntrControler         
+        CntrControler *create();
+        ~SystemBuilder();
 };
