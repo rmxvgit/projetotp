@@ -53,6 +53,12 @@ class ISAccount {
      * -false caso contrário.
      */
     virtual bool remove(const Cpf& ) = 0;
+
+     /**
+     * @brief Método destrutor virtual Interface Serviço Conta
+     */
+    virtual ~ISAccount() {};
+
 };
 #endif // ISACCOUNT_HPP
 

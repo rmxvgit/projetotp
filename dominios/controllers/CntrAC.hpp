@@ -3,6 +3,7 @@
 #include "../interfaces/IAC.hpp"
 #include "../interfaces/ISA.hpp"
 #include "../Entidades/account.hpp"
+#include "../container/ContAccount.hpp"
 #include <iostream>
 
 using namespace std;
@@ -10,7 +11,7 @@ using namespace std;
 class CntrIAAccount : public IAAccount {
    private :
     const static int CREATE = 1;
-    const static int READ = 2;
+    const static int READ   = 2;
     const static int UPDATE = 3;
     const static int REMOVE = 4;
     const static int RETURN = 5;
@@ -22,8 +23,8 @@ class CntrIAAccount : public IAAccount {
 
         void create();
         void execute(const Cpf&) ;
-
         void setCntrISAccount(ISAccount *);
+
 
 };
 

@@ -29,7 +29,7 @@ public:
     virtual void execute(Cpf*) = 0;
 
     /**
-     * @brief Método destrutor virtual
+     * @brief Método destrutor virtual Interface Apresentação Conta
      */
     virtual ~IAAccount() {};
 
@@ -37,7 +37,7 @@ public:
      * @brief Estabelece a ligação com a controladora de serviço de conta.
      * @param ISAccount Ponteiro para a interface de serviço de conta.
      */
-    virtual void setCntrAccount(ISAccount *);
+    virtual void setCntrAccount(ISAccount *) = 0;
 };
 
 #endif // IAACCOUNT_HPP

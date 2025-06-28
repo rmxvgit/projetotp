@@ -1,5 +1,6 @@
 #include "../container/ContAccount.hpp"
 
+
 bool ContAccount ::create(Account account){
     for(list<Account>::iterator element = container.begin() ; element != container.end() ; element++){
         if(element->getCpf().Get() == account.getCpf().Get())
@@ -37,7 +38,7 @@ bool ContAccount ::remove(Cpf cpf){
     for(list<Account>::iterator element = container.begin() ; element != container.end() ; element++){
         if(element->getCpf().Get() == account.getCpf().Get())
         {
-            container.erase(cpf);
+            container.erase(element);
             return true;
         }
     }
