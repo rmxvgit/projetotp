@@ -1,4 +1,4 @@
-#include "builders.h"
+#include "../build/builders.hpp"
 
 CntrControler *SystemBuilder::create(){
     
@@ -19,9 +19,9 @@ CntrControler *SystemBuilder::create(){
 }
 
 SystemBuilder :: ~SystemBuilder(){
-    delete cntrControler();
-    delete cntrAAutenticacao();
-    delete cntrIAAccount();
-    delete cntrISAutenticacao();
-    delete cntrISAccount();
+    delete cntrControler;
+    delete cntrAAutenticacao;
+    delete cntrIAAccount;
+    delete cntrISAutenticacao;
+    delete cntrISAccount;
 }

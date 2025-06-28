@@ -5,7 +5,7 @@
 // ---------------------------------------------------------------------------------
 // Implementa��es de m�todos de classe controladora.
 
-bool CntrAAutenticacao::autenticar(Cpf *cpf) {
+bool CntrAAutenticacao::autenticate(Cpf *cpf) {
     int entrada;
     Password password;
     string pwd; 

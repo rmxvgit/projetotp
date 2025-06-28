@@ -16,7 +16,7 @@ class CntrAAutenticacao:public IAA {
 private:
     ISA *cntrISAutenticacao;        // Refer�ncia para servidor.
 public:
-    bool autenticar(Cpf*);
+    bool autenticate(Cpf*);
     void setController(ISA*);
 };
 
